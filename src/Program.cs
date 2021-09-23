@@ -44,9 +44,9 @@ namespace TOSDump
                     return;
                 }
                 DumpFiles(dataPath, props);
-                DumpFiles(patchPath, props);
+                //DumpFiles(patchPath, props);
             }
-            var propsSerialized = JsonConvert.SerializeObject(props);
+            var propsSerialized = JsonConvert.SerializeObject(props, Formatting.Indented);
             File.WriteAllText(PROPERTY_FILE_NAME, propsSerialized);
             // cleanup directory
             var extractedPath = Path.Combine(Directory.GetCurrentDirectory(), "extract");
@@ -75,6 +75,7 @@ namespace TOSDump
                     props.files.Add(simpleFileName);
                     DumpFile(filename);
                     Console.Out.WriteLine("Extracted " + simpleFileName);
+                    break;
                 }
             }
         }
