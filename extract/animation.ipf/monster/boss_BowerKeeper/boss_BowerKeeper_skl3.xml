@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by IMCGames Co., Ltd (IMCGames Co., Ltd) -->
+<ActionDesc>
+    <Sound frame="0.41" soundFile="skl_eff_spread_14"/>
+    <Sound frame="3.00" soundFile="skl_eff_spread_7"/>
+    <Sound frame="5.00" soundFile="skl_eff_smokeshell"/>
+    <Sound frame="7.00" soundFile="skl_eff_dark"/>
+    <Sound frame="7.00" soundFile="mon_voice_screech_2"/>
+    <Shockwave frame="14" type="2" intensity="1" frequency="70" duration="0.3" range="1000"/>
+    <Particle frame="14" attachNode="Dummy_root" particleName="F_ground123_dark" useAttach="false" hiddenObj="false" changeEffect="None" scale="1" pause="true" use2DEffect="false" soft2DValue="20" targetPos="false"/>
+    <Particle frame="14" attachNode="Dummy_root" particleName="F_wizard_Hallucination_ground_dark" useAttach="false" hiddenObj="false" changeEffect="None" scale="0.8" pause="true" use2DEffect="false" soft2DValue="20" targetPos="false"/>
+    <Particle frame="14" attachNode="Dummy_root" particleName="F_smoke185_spread_out_violet" useAttach="false" hiddenObj="false" changeEffect="None" scale="1.2" pause="true" use2DEffect="false" soft2DValue="20" targetPos="false"/>
+    <Sound frame="36.00" soundFile="skl_eff_shot_smoke_2"/>
+    <Particle frame="40" attachNode="Dummy_root" particleName="F_wizard_Hallucination_ground_dark" useAttach="false" hiddenObj="false" changeEffect="None" scale="1.2" pause="true" use2DEffect="false" soft2DValue="20" targetPos="false"/>
+    <Sound frame="48.00" soundFile="skl_eff_dark_hit"/>
+    <Sound frame="52.32" soundFile="explosion_small"/>
+    <Particle frame="54" attachNode="Dummy_effect_ground001" particleName="F_smoke185_spread_out_violet" useAttach="false" hiddenObj="false" changeEffect="None" scale="0.6" pause="true" use2DEffect="false" soft2DValue="20" targetPos="false"/>
+    <Sound frame="61.00" soundFile="skl_eff_dark_hit"/>
+    <Sound frame="65.50" soundFile="explosion_small"/>
+    <Particle frame="66" attachNode="Dummy_effect_ground002" particleName="F_smoke185_spread_out_violet" useAttach="false" hiddenObj="false" changeEffect="None" scale="0.8" pause="true" use2DEffect="false" soft2DValue="20" targetPos="false"/>
+    <Sound frame="81.00" soundFile="skl_eff_dethrone_whoosh"/>
+    <Sound frame="83.00" soundFile="skl_eff_force_whoosh_3"/>
+    <Particle frame="84" attachNode="Dummy_effect_skl3_scratch1" particleName="F_scratch001_violet" useAttach="true" hiddenObj="false" changeEffect="None" scale="0.7" pause="true" use2DEffect="false" soft2DValue="20" targetPos="false"/>
+    <Particle frame="85" attachNode="Dummy_effect_skl3_scratch2" particleName="F_scratch001_violet" useAttach="true" hiddenObj="false" changeEffect="None" scale="0.7" pause="true" use2DEffect="false" soft2DValue="20" targetPos="false"/>
+    <Sound frame="85.28" soundFile="skl_eff_dark_hit"/>
+    <Particle frame="105" attachNode="Dummy_root" particleName="F_wizard_Hallucination_ground_dark" useAttach="false" hiddenObj="false" changeEffect="None" scale="1.2" pause="true" use2DEffect="false" soft2DValue="20" targetPos="false"/>
+</ActionDesc>

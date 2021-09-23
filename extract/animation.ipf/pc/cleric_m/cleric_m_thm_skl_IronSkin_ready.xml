@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by IMCGames Co., Ltd (IMCGames Co., Ltd) -->
+<ActionDesc>
+	<BlendOn frame="4" R="40" G="40" B="70" A="100"/>
+	<BlendOn frame="5" R="0" G="0" B="0" A="100"/>
+	<BlendOn frame="11" R="100" G="100" B="130" A="100"/>
+	<BlendOn frame="12" R="120" G="130" B="150" A="100"/>
+	<BlendOff frame="13" R="0" G="0" B="0" A="0"/>
+	<Shockwave frame="4" type="2" intensity="1" frequency="70" duration="0.1" range="1000"/>
+	<Shockwave frame="9" type="2" intensity="2" frequency="70" duration="0.3" range="1000"/>
+	<Particle frame="7" attachNode="Dummy_emitter" particleName="E_cleric_ironskin" useAttach="false" hiddenObj="false" changeEffect="None" scale="1.2" pause="true" use2DEffect="true" targetPos="false"/>
+	<Particle frame="4" attachNode="Dummy_L_HAND" particleName="I_force066_ice_explosion" useAttach="true" hiddenObj="false" changeEffect="None" scale="0.4" pause="true" use2DEffect="true" targetPos="false"/>
+	<Particle frame="5" attachNode="Bip01 L Forearm" particleName="I_force066_ice_explosion" useAttach="true" hiddenObj="false" changeEffect="None" scale="0.5" pause="true" use2DEffect="true" targetPos="false"/>
+	<Particle frame="5" attachNode="Dummy_R_HAND" particleName="I_force066_ice_explosion" useAttach="true" hiddenObj="false" changeEffect="None" scale="0.4" pause="true" use2DEffect="true" targetPos="false"/>
+	<Particle frame="12" attachNode="Dummy_R_HAND" particleName="I_force066_ice_explosion" useAttach="true" hiddenObj="false" changeEffect="None" scale="0.5" pause="true" use2DEffect="true" targetPos="false"/>
+	<Particle frame="12" attachNode="Bip01 R UpperArm" particleName="I_force066_ice_explosion" useAttach="true" hiddenObj="false" changeEffect="None" scale="0.6" pause="true" use2DEffect="true" targetPos="false"/>
+	<Sound frame="0" soundFile="None"/>
+</ActionDesc>
