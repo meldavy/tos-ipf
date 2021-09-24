@@ -1,0 +1,1073 @@
+Message Name | Registration Method | Args | Origin
+--- | --- | --- | ---
+`SUCCESS_BUY_ABILITY_POINT` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame)`<br>`(frame, msg, argmsg, argnum)` | ablity_point_buy.lua<br>skillability.lua
+`SUCCESS_EXTRACT_ABILITY_POINT` | `RegisterMsg` | `(frame, msg, argStr, type)` | ability_point_extractor.lua
+`OPEN_DLG_ACCOUNTWAREHOUSE` | `RegisterMsg` | `(frame)` | accountwarehouse.lua
+`ACCOUNT_WAREHOUSE_ITEM_LIST` | `RegisterMsg` | `(frame, msg, argStr, argNum, tab_index)` | accountwarehouse.lua
+`ACCOUNT_WAREHOUSE_ITEM_ADD` | `RegisterMsg` | `(frame, msg, argStr, argNum, tab_index)` | accountwarehouse.lua
+`ACCOUNT_WAREHOUSE_ITEM_REMOVE` | `RegisterMsg` | `(frame, msg, argStr, argNum, tab_index)` | accountwarehouse.lua
+`ACCOUNT_WAREHOUSE_ITEM_CHANGE_COUNT` | `RegisterMsg` | `(frame, msg, argStr, argNum, tab_index)` | accountwarehouse.lua
+`ACCOUNT_WAREHOUSE_ITEM_IN` | `RegisterMsg` | `(frame, msg, argStr, argNum, tab_index)` | accountwarehouse.lua
+`ACCOUNT_WAREHOUSE_VIS` | `RegisterOpenOnlyMsg` | `(frame)` | accountwarehouse.lua
+`UPDATE_COLONY_TAX_RATE_SET` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame)`<br>`(frame, msg, argstr, argnum)` | accountwarehouse.lua<br>appraisal.lua<br>briquetting.lua<br>colony_tax_board.lua<br>companionshop.lua<br>dialog.lua<br>icorrelease_multiple.lua<br>icorrelease_random_multiple.lua<br>itemdecompose.lua<br>itemoptionrelease.lua<br>itemoptionrelease_random.lua<br>itemrullet.lua<br>managegem.lua<br>pet_info.lua<br>repair140731.lua<br>shop.lua
+`ACHIEVE_POINT_LIST` | `RegisterOpenOnlyMsg` | `(frame)` | achieve.lua
+`ACHIEVE_POINT` | `RegisterOpenOnlyMsg` | `(frame)` | achieve.lua<br>status.lua
+`ACHIEVE_NEW` | `RegisterMsg` | `(frame, msg, argStr, classID)` | achieve.lua
+`ACHIEVE_RANK` | `RegisterMsg` | `(frame, msg, argStr, classID)` | achieve.lua
+`UPDATE_ADVENTURE_BOOK` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | adventure_book.lua
+`ADVENTURE_BOOK_MAIN_RANKING` | `RegisterMsg` | `()` | adventure_book.lua
+`ADVENTURE_BOOK_ITEM_RANKING` | `RegisterMsg` | `()` | adventure_book.lua
+`ADVENTURE_BOOK_RANKING_PAGE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | adventure_book.lua
+`ADVENTURE_BOOK_MY_RANK_UPDATE` | `RegisterMsg` | `()` | adventure_book.lua
+`ADVENTURE_BOOK_RANK_SEARCH` | `RegisterMsg` | `()` | adventure_book.lua
+`UPHILL_RANK_PAGE` | `RegisterMsg` | `()` | adventure_book.lua
+`ADVENTURE_BOOK_UPHILL_RANK_SEARCH` | `RegisterMsg` | `()` | adventure_book.lua
+`PVP_PC_INFO` | `RegisterMsg` | `()`<br>`(frame, msg, argStr, argNum)` | adventure_book.lua<br>guildbattle_league.lua<br>propertyshop.lua<br>worldpvp.lua
+`WORLDPVP_RANK_PAGE` | `RegisterMsg` | `()`<br>`(frame, msg, strarg, numarg)` | adventure_book.lua<br>ingameeventbanner.lua<br>worldpvp.lua
+`PVP_STATE_CHANGE` | `RegisterMsg` | `()`<br>`(frame,ctrl,argStr,argNum)`<br>`(frame, msg, pvpType)` | adventure_book.lua<br>guildbattle_league.lua<br>induninfo.lua<br>party.lua<br>worldpvp.lua
+`PVP_PROPERTY_UPDATE` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)`<br>`()` | adventure_book.lua<br>guildbattle_league.lua<br>propertyshop.lua<br>worldpvp.lua
+`UPDATE_ADVENTURE_BOOK_REWARD` | `RegisterMsg` | `()`<br>`(frame, msg, argStr, argNum)` | adventure_book.lua<br>adventure_book_reward.lua
+`UPDATE_ADVENTURE_BOOK_CONTENTS_POINT` | `RegisterMsg` | `()` | adventure_book.lua
+`UPDATE_WORLDPVP_GAME_LIST` | `RegisterMsg` | `()` | adventure_book.lua<br>worldpvp.lua
+`SHOP_POINT_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | adventure_book.lua<br>propertyshop.lua
+`AETHER_GEM_REINFORCE_MAX_COUNT` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | aether_gem_reinforce.lua
+`OPEN_DLG_ARTHER_GEM_REINFORCE` | `RegisterMsg` | `(frame)` | aether_gem_reinforce.lua
+`AETHER_GEM_REINFORCE_RESULT` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | aether_gem_reinforce.lua
+`HELP_MSG_ADD` | `RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`(frame, msg)` | alramnotice.lua<br>helplist.lua<br>helpmsgbox.lua<br>piphelp.lua
+`GAME_START` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)`<br>`(frame)`<br>`(frame, changeDirection)` | alramnotice.lua<br>ancient_solo_dungeon_info.lua<br>attendance.lua<br>changejob.lua<br>changejobbutton.lua<br>chatframe.lua<br>damage_meter.lua<br>durnotify.lua<br>friend.lua<br>headsupdisplay.lua<br>helplist.lua<br>housing_editmode.lua<br>housing_promote_post.lua<br>inte_warp.lua<br>inventory.lua<br>joystickquickslot.lua<br>map.lua<br>minimap.lua<br>minimizedalarm.lua<br>minimizedeventbanner.lua<br>minimized_certificate_shop_button.lua<br>minimized_event_progress_check_button.lua<br>minimized_guild_housing.lua<br>minimized_housing_craft.lua<br>minimized_housing_promote_board.lua<br>minimized_leticia_button.lua<br>minimized_personal_housing.lua<br>minimized_pvpmine_shop_button.lua<br>minimized_total_shop_button.lua<br>minimized_tp_button.lua<br>minimized_tutorialnote_button.lua<br>necronomicon_hud.lua<br>party.lua<br>partyinfo.lua<br>pet_list.lua<br>playtime.lua<br>poisonpot_hud.lua<br>quest.lua<br>questinfo.lua<br>questinfoset_2.lua<br>quickslotnexpbar.lua<br>relicmanager.lua<br>status.lua<br>summonsinfo.lua<br>sysmenu.lua<br>sysmenu_custom.lua<br>weaponswap.lua
+`ANCIENT_CARD_GACHA_START` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | ancient_card_gacha.lua
+`ANCIENT_CARD_GACHA_CARD_OPEN` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | ancient_card_gacha.lua
+`ANCIENT_CARD_GACHA_CARD_DUMMY_OPEN` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | ancient_card_gacha.lua
+`ANCIENT_CARD_GACHA_END` | `RegisterMsg` | `(frame)` | ancient_card_gacha.lua
+`ANCIENT_CARD_ADD` | `RegisterMsg` | `(frame,msg, guid)` | ancient_card_list.lua
+`ANCIENT_CARD_REMOVE` | `RegisterMsg` | `(frame)` | ancient_card_list.lua
+`ANCIENT_CARD_LIST_LOAD` | `RegisterMsg` | `(frame)` | ancient_card_list.lua
+`ANCIENT_CARD_UPDATE_EXP` | `RegisterMsg` | `(frame,msg, guid,slot)` | ancient_card_list.lua
+`ANCIENT_CARD_COMBINE` | `RegisterMsg` | `(frame,msg, guid,slot)` | ancient_card_list.lua
+`ANCIENT_CARD_EVOLVE` | `RegisterMsg` | `(frame,msg, guid,slot)` | ancient_card_list.lua
+`ANCIENT_CARD_UPDATE_SLOT` | `RegisterMsg` | `(frame)` | ancient_card_list.lua
+`ANCIENT_CARD_LOCK` | `RegisterMsg` | `(frame,msg,guid)` | ancient_card_list.lua
+`ANCIENT_MON_REGISTER` | `RegisterMsg` | `()` | ancient_mon_list.lua
+`ANCIENT_MON_REMOVE` | `RegisterMsg` | `()` | ancient_mon_list.lua
+`ANCIENT_MON_LIST_LOAD` | `RegisterMsg` | `()` | ancient_mon_list.lua
+`ANCIENT_MON_UPDATE_EXP` | `RegisterMsg` | `()` | ancient_mon_list.lua
+`ANCIENT_MON_COMPOSE` | `RegisterMsg` | `()` | ancient_mon_list.lua
+`ANCIENT_MON_UPDATE_SLOT` | `RegisterMsg` | `()` | ancient_mon_list.lua
+`ANCIENT_SOLO_MONSTER_DEAD` | `RegisterMsg` | `(frame,msg,strArg,numArg)` | ancient_solo_dungeon_info.lua
+`OPEN_DLG_APPRAISAL` | `RegisterMsg` | `(frame, msg, arg1, arg2)` | appraisal.lua
+`SUCCESS_APPRALSAL` | `RegisterMsg` | `(frame, msg, arg1, arg2)` | appraisal.lua
+`SUCCESS_APPRALSAL_PC` | `RegisterMsg` | `(frame)` | appraisal_pc.lua
+`ADDON_CLOSE_MSG` | `RegisterMsg` | `()` | appraiser_forgery.lua
+`OPEN_DLG_ARKDECOMPOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | arkdecompose.lua
+`RESULT_ARK_DECOMPOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | arkdecompose.lua
+`ARK_COMPOSITION_EXP_UP_SUCCESS` | `RegisterMsg` | `(pc, msg, guid)` | ark_composition.lua
+`ARK_COMPOSITION_LV_UP_SUCCESS` | `RegisterMsg` | `(pc, msg, guid)` | ark_composition.lua
+`ARK_RELOCATION_SUCCESS` | `RegisterMsg` | `(pc, msg, dest_item_idx)` | ark_relocation.lua
+`CREATED_ARROW_ITEM` | `RegisterMsg` | `(frame, msg, str, num)` | arrow_craft.lua
+`FAIL_CREATE_ARROW_ITEM` | `RegisterMsg` | `(frame, msg, str, num)` | arrow_craft.lua
+`UPDATE_ATTENDANCE_REWARD` | `RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`(frame)` | attendance.lua<br>listselect_ui.lua
+`ATTENDANCE_REWARD_CHECK_UI_ON` | `RegisterMsg` | `(frame, argStr, argNum, argNum2)` | attendance.lua
+`NPC_AUCTION_LIST` | `RegisterMsg` | `(frame, msg, auctionName, npcHandle)`<br>`(frame)` | auction.lua<br>auction_popup.lua
+`NPC_AUCTION_BID` | `RegisterMsg` | `(frame, msg, guid)` | auction.lua<br>auction_popup.lua
+`NPC_AUCTION_MYINFO` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, msg, auctionName)`<br>`(frame)` | auction.lua<br>sysmenu.lua
+`NPC_AUCTION_DEL` | `RegisterMsg` | `(frame)` | auction_popup.lua
+`BANDI_CAM` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | bandicam.lua
+`BEAT_KEYBOARD` | `RegisterMsg` | `(frame, msg, beatCnt, second)` | beatkeyboard.lua
+`BEAUTYSHOP_UI_OPEN` | `RegisterMsg` | `(frame, msg, shopTypeName, genderNum)` | beautyshop.lua
+`BEAUTYSHOP_PURCHASED_HAIR_LIST` | `RegisterMsg` | `()` | beautyshop.lua
+`BEAUTYSHOP_DIRECTION_START` | `RegisterMsg` | `(frame, msg, argString, argNum)` | beautyshop.lua
+`BEAUTYSHOP_DIRECTION_END` | `RegisterMsg` | `(frame, msg, argString, argNum)` | beautyshop.lua
+`BEAUTYSHOP_PURCHASE_FAIL_LIMIT_PAYMENT` | `RegisterMsg` | `(frame, msg, argString, argNum)` | beautyshop.lua
+`UPDATE_BEAUTY_COUPON_STAMP` | `RegisterMsg` | `(frame, msg, argStr, stampCnt)` | beauty_coupon.lua
+`ROLLBACK_HEAD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | beauty_hair.lua
+`READ_BOOK_ITEM` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | bookitemread.lua
+`BOUNTYHUNT_OPEN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | bountyhunt.lua
+`BOUNTYHUNT_CLOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | bountyhunt.lua
+`BOUNTYHUNT_MILESTONE_OPEN` | `RegisterMsg` | `(frame, msg, strarg, numarg)` | bountyhunt_milestone.lua
+`BOUNTYHUNT_MILESTONE_CLOSE` | `RegisterMsg` | `()` | bountyhunt_milestone.lua
+`SUCCESS_BRIQUETTING` | `RegisterMsg` | `(frame, msg, guid, argNum)` | briquetting.lua<br>briquetting_result.lua
+`BUFF_ADD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | buff.lua<br>buff_separatedlist.lua
+`BUFF_REMOVE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | buff.lua<br>buff_separatedlist.lua
+`BUFF_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | buff.lua<br>buff_separatedlist.lua<br>homunclus.lua
+`TEST_ADDON_MSG_DUMP_MSG` | `RegisterMsg` | `(frame)` | buff.lua
+`RELOAD_BUFF_ADD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | buff_separatedlist.lua
+`OPEN_CAMP_UI` | `RegisterMsg` | `(frame, msg, str, forceOpenUI, isOwner)` | camp_ui.lua
+`CAMP_HISTORY_UI` | `RegisterMsg` | `(frame, msg)` | camp_ui.lua
+`RINGCOMMANDSELECT` | `RegisterMsg` | `(frame, ctrl)` | cartmenu.lua
+`CAST_BEGIN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | castingbar.lua
+`CAST_ADD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | castingbar.lua
+`CAST_END` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | castingbar.lua
+`DYNAMIC_CAST_BEGIN` | `RegisterMsg` | `(frame, msg, argStr, maxTime, isVisivle)` | castingbar.lua
+`DYNAMIC_CAST_END` | `RegisterMsg` | `(frame, msg, argStr, maxTime, isVisivle)`<br>`(frame, msg, str, arg)	frame:ShowWindow(0);endfunction ON_CELL_CASTING_START(frame, msg, str, maxTime)	local timeGauge = GET_CHILD(frame, "timeGauge", "ui::CGauge");	timeGauge:SetPoint(0, 100);	timeGauge:SetPointWithTime(100, maxTime);	frame:ShowWindow(1);	frame:SetDuration(maxTime);endfunction ON_CELL_REMAIN_COUNT(frame, msg, str, cellCount)	local cellText = GET_CHILD(frame, "cellText", "ui::CRichText");	cellText:SetTextByKey("remainCell", cellCount)` | castingbar.lua<br>cellselect.lua
+`CASUAL_GAMBLE_ITEM_GET` | `RegisterMsg` | `(frame, msg, itemid, itemCount)` | casualgamble.lua
+`CELL_CASTING_START` | `RegisterMsg` | `(frame, msg, str, maxTime)	local timeGauge = GET_CHILD(frame, "timeGauge", "ui::CGauge");	timeGauge:SetPoint(0, 100);	timeGauge:SetPointWithTime(100, maxTime);	frame:ShowWindow(1);	frame:SetDuration(maxTime);endfunction ON_CELL_REMAIN_COUNT(frame, msg, str, cellCount)	local cellText = GET_CHILD(frame, "cellText", "ui::CRichText");	cellText:SetTextByKey("remainCell", cellCount)` | cellselect.lua
+`CHAIN_SKILL_SET` | `RegisterMsg` | `(frame, msg, str, arg, info)` | chainskill.lua
+`UI_CHALLENGE_MODE_TOTAL_KILL_COUNT` | `RegisterMsg` | `(frame, msg, str, arg)` | challenge_mode.lua
+`FIELD_DUNGEON_KILL_COUNT` | `RegisterMsg` | `()` | challenge_mode.lua
+`EVENT_DUNGEON_KILL_COUNT` | `RegisterMsg` | `()` | challenge_mode.lua
+`JOB_HISTORY_UPDATE` | `RegisterMsg` | `(frame)` | changejob.lua
+`CHANGE_CLIENT_SIZE` | `RegisterMsg` | `(frame)`<br>`(frame, msg)` | changejob.lua<br>chatframe.lua<br>fieldui.lua<br>fullblack.lua<br>map.lua<br>mic.lua<br>uieffect.lua
+`UPDATE_CLASS_RESET_POINT_INFO` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | changejob.lua
+`JOB_CHANGE` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, name, range)`<br>`(frame)` | changejobbutton.lua<br>jobcommand.lua<br>necronomicon_hud.lua<br>poisonpot_hud.lua<br>skillability.lua<br>status.lua<br>sysmenu.lua<br>sysmenu_custom.lua
+`JOB_EXP_ADD` | `RegisterMsg` | `(frame, msg, name, range)`<br>`(frame, msg, str, exp, tableinfo)` | changejobbutton.lua<br>charbaseinfo.lua<br>jobchangenotice.lua
+`QUEST_UPDATE` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, name, range)`<br>`(frame)` | changejobbutton.lua<br>map.lua<br>minimap.lua<br>quest.lua<br>questinfo.lua<br>questinfoset_2.lua
+`START_JOB_CHANGE` | `RegisterMsg` | `(frame, msg, name, range)`<br>`()` | changejobbutton.lua<br>summonsinfo.lua
+`ZONE_TRAFFICS` | `RegisterMsg` | `(frame, msg, argStr)` | channel.lua
+`LEVEL_UPDATE` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, msg, argStr, argNum)` | charbaseinfo.lua<br>headsupdisplay.lua<br>inventory.lua
+`EXP_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | charbaseinfo.lua
+`JOB_EXP_UPDATE` | `RegisterMsg` | `(frame, msg, str, exp, tableinfo)` | charbaseinfo.lua
+`CHANGE_COUNTRY` | `RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`(frame)` | charbaseinfo.lua<br>headsupdisplay.lua<br>questreward.lua
+`SET_CHAT_MACRO_DEFAULT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | chatmacro.lua
+`TOKEN_STATE` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame)`<br>`(frame, msg, argStr, argNum)` | chatmacro.lua<br>status.lua
+`ADD_CHAT_EMOTICON` | `RegisterOpenOnlyMsg` | `(frame)` | chat_emoticon.lua
+`REMOVE_FRIEND` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `()`<br>`(frame, msg, aid, listType)` | chat_grouplist.lua<br>friend.lua<br>sysmenu.lua
+`ADD_FRIEND` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `()`<br>`(frame, msg, aid, listType)` | chat_grouplist.lua<br>friend.lua<br>sysmenu.lua
+`UPDATE_FRIEND_LIST` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `()`<br>`(frame, msg, argStr, argNum)` | chat_grouplist.lua<br>friend.lua<br>sysmenu.lua
+`SET_COIN_GET_GAUGE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | coin_get_gauge.lua
+`UPDATE_COIN_GET_GAUGE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | coin_get_gauge.lua
+`ADD_COLLECTION` | `RegisterMsg` | `(frame, msg)` | collection.lua<br>pump_collection.lua
+`COLLECTION_ITEM_CHANGE` | `RegisterMsg` | `(frame, msg, str, type, removeType)` | collection.lua<br>pump_collection.lua
+`INV_ITEM_ADD` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, msg, str, type, removeType)`<br>`(frame, msg, argStr, argNum)`<br>`(frame)` | collection.lua<br>inventory.lua<br>itemCraft.lua<br>joystickrestquickslot.lua<br>poisonpot.lua<br>poisonpot_hud.lua<br>pump_collection.lua<br>questinfo.lua<br>restquickslot.lua<br>sequentialpickitem.lua<br>setitemalarm.lua
+`INV_ITEM_IN` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, msg, str, type, removeType)` | collection.lua<br>sequentialpickitem.lua
+`INV_ITEM_POST_REMOVE` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, msg, str, type, removeType)`<br>`(frame, msg, argStr, argNum)`<br>`(frame)` | collection.lua<br>inventory.lua<br>itemCraft.lua<br>joystickrestquickslot.lua<br>quickslotnexpbar.lua<br>restquickslot.lua<br>shop.lua<br>tournament_gift.lua
+`INV_ITEM_CHANGE_COUNT` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, msg, str, type, removeType)`<br>`(frame, msg, str, time)`<br>`(frame)` | collection.lua<br>itemCraft.lua<br>joystickrestquickslot.lua<br>quickslotnexpbar.lua<br>restquickslot.lua<br>shop.lua<br>tournament_gift.lua
+`UPDATE_READ_COLLECTION_COUNT` | `RegisterMsg` | `(frame, msg, str, type, removeType)`<br>`(frame, msg, argStr, argNum)` | collection.lua<br>sysmenu.lua
+`COLLECTION_UI_OPEN` | `RegisterMsg` | `(frame)` | collection.lua
+`COLONY_ALARM_MSG` | `RegisterMsg` | `(frame, msg, argStr, diffSec)` | colony_alarm.lua
+`COLONY_BGM` | `RegisterMsg` | `(frame, msg, argStr, diffSec)` | colony_alarm.lua
+`UPDATE_COLONY_MARKET_FEE_PAYMENT_LIST` | `RegisterMsg` | `(frame, msg, strarg, numarg)` | colony_payment.lua
+`UPDATE_COLONY_POINT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | colony_point_info.lua
+`OPEN_COLONY_POINT` | `RegisterMsg` | `(frame, msg)`<br>`(frame)` | colony_point_info.lua<br>map.lua<br>minimap.lua
+`UPDATE_OTHER_GUILD_EMBLEM` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | colony_point_info.lua<br>colony_result.lua<br>ranksystem_ui.lua<br>worldmap.lua<br>worldmap2_colonymap.lua<br>worldmap2_mainmap.lua
+`COLONY_OCCUPATION_INFO_UPDATE` | `RegisterMsg` | `(frame)`<br>`(frame, changeDirection)` | colony_point_info.lua<br>guildinfo.lua<br>worldmap.lua
+`COLONY_BUILD_ICON_UPDATE` | `RegisterMsg` | `()` | colony_point_info.lua
+`COLONY_BUILD_ICON_REMOVE` | `RegisterMsg` | `()` | colony_point_info.lua
+`SUCCESS_SECOND_LEAGUE_COLONY_REWARD` | `RegisterMsg` | `(frame, msg, mapID)` | colony_reward_board.lua
+`UPDATE_COLONY_REWARD_DEATIL_LIST` | `RegisterMsg` | `(frame, msg, mapID)` | colony_reward_board.lua
+`START_SECOND_LEAGUE_COLONY_REWARD` | `RegisterMsg` | `(frame)` | colony_reward_board.lua
+`UPDATE_COLONY_TAX_CHEQUE_LIST` | `RegisterMsg` | `(frame, msg, strarg, numarg)` | colony_tax_board.lua
+`UPDATE_COLONY_TAX_HISTORY_LIST` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | colony_tax_board.lua
+`COLONY_TAX_CHEQUE_SEND_SUCCESS` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | colony_tax_board.lua
+`COLONY_TAX_CHEQUE_RECV` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | colony_tax_board.lua
+`UPDATE_COLONY_TAX_CHEQUE` | `RegisterOpenOnlyMsg` | `(frame, msg, argstr, argnum)` | colony_tax_board.lua
+`COLONY_TAX_PAYMENT_RECV_SUCCESS` | `RegisterMsg` | `(frame, msg, logKey)` | colony_tax_payment.lua
+`CLEAR_COLONY_WARP_LIST` | `RegisterMsg` | `(frame, msg, strarg, numarg)` | colony_warp_list.lua
+`ADD_COLONY_WARP_LIST` | `RegisterMsg` | `(frame, msg, strarg, numarg)` | colony_warp_list.lua
+`OPEN_COLONY_WARP_LIST` | `RegisterMsg` | `(frame, msg, strarg, numarg)` | colony_warp_list.lua
+`COMMON_GAMBLE_ITEM_GET` | `RegisterMsg` | `(frame, msg, itemid, itemCount)` | commongamble.lua<br>eventgamble.lua
+`COMMON_GAMBLE_ITEM_GET_END` | `RegisterMsg` | `()` | commongamble.lua
+`COMMON_GAMBLE_ITEM_GET_PROPERTY` | `RegisterMsg` | `(frame, msg, class_name, itemCount)` | commongamble.lua
+`OPEN_DLG_COMPANIONSHOP` | `RegisterMsg` | `(frame, msg, shopGroup)` | companionshop.lua
+`COMPANIONSHOP_FOOD_TAB` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | companionshop.lua
+`COMPANIONSHOP_DIALOG_CLOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | companionshop.lua
+`RELATED_HISTORY` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, aid, page)` | compare.lua<br>friend.lua
+`OPEN_DLG_COMPOSITION_VIBORA` | `RegisterMsg` | `(type)` | composition_vibora.lua
+`COMPOSITION_VIBORA_SUCCESS` | `RegisterMsg` | `(frame, msg, guid)` | composition_vibora.lua
+`EVENT_2011_5TH_VIBORA_COMPOSITE_SUCCESS` | `RegisterMsg` | `(frame, msg, guid)` | composition_vibora.lua<br>vibora_weapon_trade.lua
+`CONTENTS_MULTIPLE_OPEN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | contents_multiple.lua
+`CONTENTS_MULTIPLE_OPEN_CONTENTS` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | contents_multiple.lua
+`CONTENTS_MULTIPLE_CLOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | contents_multiple.lua
+`OPEN_DLG_CUSTOM_COIN_SHOP` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | custom_coin_shop.lua
+`CLOSE_DLG_CUSTOM_COIN_SHOP` | `RegisterMsg` | `(frame)` | custom_coin_shop.lua
+`WEEKLY_BOSS_DPS_START` | `RegisterMsg` | `(frame,msg,strArg,numArg)` | damage_meter.lua
+`WEEKLY_BOSS_DPS_END` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | damage_meter.lua
+`WEEKLY_BOSS_DPS_TIMER_UPDATE` | `RegisterMsg` | `(frame,msg,strArg,numArg)` | damage_meter.lua
+`OPEN_DLG_DECOMPOSE_MANAGER` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | decompose_manager.lua
+`RESULT_DECOMPOSE_MANAGER` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | decompose_manager.lua
+`RESULT_DECOMPOSE_VIBORA` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | decompose_manager.lua
+`MGAME_VALUE_UPDATE` | `RegisterOpenOnlyMsg` | `(frame, msg, propName, propValue)` | defenceui.lua<br>flaggame.lua<br>guildbattle_score.lua<br>worldpvp_score.lua
+`DIALOG_CHANGE_OK` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialog.lua<br>dialogillust.lua
+`DIALOG_CHANGE_NEXT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialog.lua<br>dialogillust.lua
+`DIALOG_CHANGE_SELECT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialog.lua<br>dialogillust.lua<br>dialogselect.lua
+`DIALOG_CLOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialog.lua<br>dialogillust.lua<br>dialogselect.lua<br>questend.lua<br>questprogress.lua<br>queststart.lua<br>repair.lua<br>repair140731.lua<br>shop.lua
+`ESCAPE_PRESSED` | `RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`(frame)` | dialog.lua<br>dialogselect.lua<br>indunenter.lua<br>questreward.lua<br>shop.lua
+`DIALOG_SKIP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialog.lua
+`DIALOG_DIRECT_SELECT_DLG_LIST` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialog.lua
+`DIALOG_ESCAPE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialog.lua
+`LEAVE_TRIGGER` | `RegisterMsg` | `(frame)` | dialog.lua
+`DIALOG_ADD_SELECT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialogselect.lua
+`DIALOG_ADD_SELECT_MULTIPLE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialogselect.lua
+`DIALOG_NUMBER_RANGE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialogselect.lua
+`DIALOG_TEXT_INPUT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialogselect.lua
+`DIALOGSELECT_UP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialogselect.lua
+`DIALOGSELECT_DOWN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialogselect.lua
+`DIALOGSELECT_SELECT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialogselect.lua
+`DIALOGSELECT_MULTIPLE_SKIN_RESET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialogselect.lua
+`DIALOGSELECT_MULTIPLE_SELECT_TOGGLE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | dialogselect.lua
+`DIRECTOR_CAPTION` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | directormode.lua
+`DRESS_ROOM_SET` | `RegisterMsg` | `(frame,msg,thema,argNum)` | dress_room.lua
+`DRESS_ROOM_COLLECTION_ADD` | `RegisterMsg` | `(frame,msg,thema,argNum)` | dress_room.lua
+`UPDATE_ITEM_REPAIR` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, notOpenFrame)`<br>`(frame, msg, argStr, argNum)` | durnotify.lua<br>inventory.lua<br>repair.lua<br>repair140731.lua
+`ITEM_PROP_UPDATE` | `RegisterOpenOnlyMsg` | `(frame, notOpenFrame)` | durnotify.lua
+`EQUIP_ITEM_LIST_GET` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, notOpenFrame)`<br>`(frame, msg, arg_str, arg_num)`<br>`(frame)` | durnotify.lua<br>goddess_equip_manager.lua<br>inventory.lua<br>quickslotnexpbar.lua<br>rankreset.lua<br>rankrollback.lua
+`MYPC_CHANGE_SHAPE` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, notOpenFrame)`<br>`(frame, msg, argStr, argNum)`<br>`(frame)` | durnotify.lua<br>headsupdisplay.lua<br>inventory.lua<br>status.lua
+`EARTH_TOWER_POPUP` | `RegisterMsg` | `(frame, msg, mgameValue, isLeader)` | earthtowerpopup.lua
+`EARTHTOWERSHOP_BUY_ITEM` | `RegisterMsg` | `(frame, msg, itemName, itemCount)` | earthtowershop.lua
+`EARTHTOWERSHOP_BUY_ITEM_RESULT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | earthtowershop.lua
+`EARTHTOWERSHOP_REMAIN_TIME` | `RegisterMsg` | `(frame, msg, argStr, remaintime)` | earthtowershop.lua
+`EARTHTOWERSHOP_CLOSE_SHOP_TYPE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | earthtowershop.lua
+`DO_OPEN_EDITMSGBOX_UI` | `RegisterMsg` | `(clmsg, yesScp, noScp)` | editmsgbox.lua
+`UPDATE_SPEND_ITEM` | `RegisterMsg` | `(frame)` | enchantarmoropen.lua<br>itemdungeon.lua
+`EVENT_GAMBLE_START` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | eventgamble.lua
+`EVENT_TXT` | `RegisterMsg` | `(frame, msg, str, num)` | eventtimer.lua
+`FIELD_DUNGEON_START_TIMER` | `RegisterMsg` | `()` | eventtimer.lua
+`EVENT_FLEX_BOX_STATE_INIT` | `RegisterMsg` | `(frame, msg, argStr, type)` | event_flex_box.lua
+`EVENT_FLEX_BOX_REWARD_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | event_flex_box.lua
+`EVENT_FLEX_BOX_ACCRUE_REWARD_UPDATE` | `RegisterMsg` | `(frame)` | event_flex_box.lua
+`EVENT_FLEX_BOX_REWARD_GET_SUCCESS` | `RegisterMsg` | `(frame, msg, argStr, isPose)` | event_flex_box.lua
+`EVENT_PICTURE` | `RegisterMsg` | `(frame, msg, str, arg1, arg2)` | event_picture.lua
+`EVENT_PROGRESS_CHECK_OPEN_COMMAND` | `RegisterMsg` | `(frame, msg, argStr, type)` | event_progress_check.lua
+`EVENT_PROGRESS_CHECK_DAILY_PLAY_TIME_UPDATE` | `RegisterMsg` | `(frame, msg, time)` | event_progress_check.lua
+`EVENT_YOUR_MASTER_OPEN` | `RegisterMsg` | `(frame, msg, argStr)` | event_progress_check.lua
+`EVENT_REWARD_NOTIFY_INIT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | event_reward_notify.lua
+`EVENT_REWARD_NOTIFY_ITEM_GET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | event_reward_notify.lua
+`EVENT_STAMP_TOUR_UI_OPEN_COMMAND` | `RegisterMsg` | `()` | event_stamp_tour.lua
+`EVENT_STAMP_TOUR_REWARD_GET` | `RegisterMsg` | `(frame, msg, argstr, argnum)`<br>`()` | event_stamp_tour.lua<br>event_stamp_tour_summer.lua
+`EVENT_STAMP_TOUR_SUMMER_UI_OPEN_COMMAND` | `RegisterMsg` | `(_,msg,argStr,argNum)` | event_stamp_tour_summer.lua
+`EVENT_TP_SHOP_1912_GACHA` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | event_tp_shop_icon.lua
+`EXCHANGE_START` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | exchange.lua
+`EXCHANGE_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | exchange.lua
+`EXCHANGE_CANCEL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | exchange.lua
+`EXCHANGE_SUCCESS` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | exchange.lua
+`EXCHANGE_AGREE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | exchange.lua
+`EXCHANGE_FINALAGREE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | exchange.lua
+`EXCHANGE_REQUEST` | `RegisterMsg` | `(frame)` | exchange.lua
+`MSG_EXCHANGE_ANTIQUE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | exchangeantique.lua
+`MSG_CLEAR_EXCHANGE_ANTIQUE` | `RegisterMsg` | `()` | exchangeantique.lua
+`MSG_CLEAR_EXCHANGE_EWEAPONTYPE` | `RegisterMsg` | `()` | exchangeweapontype.lua<br>extract_luciferi_property.lua
+`EXPIREDITEM_ALERT_OPEN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | expireditem_alert.lua
+`MAXFEVERTIME` | `RegisterMsg` | `(time)` | fevorcombo.lua
+`RAISE_FIELD_EVENT` | `RegisterMsg` | `(frame, msg, type, remainSec)` | fieldevent.lua
+`FIELD_EVENT_PC_LIST` | `RegisterMsg` | `(frame)` | fieldevent.lua
+`FIELDEVENT_START` | `RegisterMsg` | `(frame)` | fieldevent.lua
+`FIELDEVENT_OUT` | `RegisterMsg` | `(frame)` | fieldevent.lua
+`FIELDEVENT_DESTROYED` | `RegisterMsg` | `(frame)` | fieldevent.lua
+`FISHING_ITEM_LIST` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | fishing_item_bag.lua
+`FISHING_EXPAND_SLOT` | `RegisterMsg` | `(frame)` | fishing_item_bag.lua
+`FISHING_SUCCESS_COUNT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | fishing_item_bag.lua
+`FISHING_RANK_PAGE` | `RegisterMsg` | `(frame, msg, rankType, page)` | fishing_rank.lua
+`FISH_RUBBING_PAPER_FISH` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | fish_rubbing_paper.lua
+`LAYER_PC_LIST_UPDATE` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame)` | flaggame.lua<br>layerscore.lua<br>t_pvp_score.lua<br>worldpvp_score.lua
+`MGAME_SOBJ_UPDATE` | `RegisterOpenOnlyMsg` | `(frame, msg, cid)` | flaggame.lua
+`FLUTING_KEYBOARD_OPEN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | fluting_keyboard.lua
+`FLUTING_KEYBOARD_CLOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | fluting_keyboard.lua
+`OPEN_FOOD_TABLE_UI` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | foodtable_ui.lua
+`FOOD_ADD_SUCCESS` | `RegisterMsg` | `()` | foodtable_ui.lua
+`FOODTABLE_HISTORY_UI` | `RegisterMsg` | `(frame, msg, handle)` | foodtable_ui.lua
+`FPS_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | fps.lua
+`SERVER_FPS` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | fps.lua
+`RTT_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | fps.lua
+`FRIEND_SESSION_CHANGE` | `RegisterOpenOnlyMsg` | `(frame, msg, aid, listType)`<br>`(frame)` | friend.lua<br>sagegofriend.lua
+`RELATED_SESSION_COUNT` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | friend.lua
+`TREE_NODE_RCLICK` | `RegisterOpenOnlyMsg` | `(frame, msg, clickedGroupName, argNum)` | friend.lua
+`FRIEND_NAME_CHANGED` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | friend.lua
+`GAME_START_3SEC` | `RegisterMsg` | `(frame)` | friend.lua<br>guildinfo.lua
+`CLOSE_GACHA_CUBE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | gacha_cube.lua
+`CLOSE_GACHA_CUBE_LEGEND` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | gacha_cube_legend.lua
+`GAMEEXIT_TIMER_START` | `RegisterMsg` | `(frame, msg, reason, time)` | gameexitpopup.lua
+`GAMEEXIT_TIMER_UPDATE` | `RegisterMsg` | `(frame, msg, reason, time)` | gameexitpopup.lua
+`GAMEEXIT_TIMER_END` | `RegisterMsg` | `(frame)` | gameexitpopup.lua
+`OPEN_GAUGE_BOSS_PATTERN` | `RegisterMsg` | `(frame)` | gauge_boss_pattern.lua
+`CLOSE_GAUGE_BOSS_PATTERN` | `RegisterMsg` | `(frame)` | gauge_boss_pattern.lua
+`OPEN_GAUGE_BOSS_PATTERN_BUFF` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | gauge_boss_pattern.lua
+`CLOSE_GAUGE_BOSS_PATTERN_BUFF` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | gauge_boss_pattern.lua
+`MSG_CLEAR_GODDESS_CARD_COPY` | `RegisterMsg` | `()` | goddesscardcopy.lua
+`GODDESSCARD_SLOT_SET` | `RegisterMsg` | `(frame,msg,itemClassName,argNum)` | goddesscardslot.lua
+`GODDESSCARD_SLOT_REMOVE` | `RegisterMsg` | `(frame,msg)` | goddesscardslot.lua
+`OPEN_DLG_GODDESS_EQUIP_MANAGER` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_SUCCESS_GODDESS_REINFORCE_EXEC` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_FAILED_GODDESS_REINFORCE_EXEC` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_SUCCESS_GODDESS_ENCHANT_EXEC` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_FAILED_GODDESS_ENCHANT_EXEC` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_SUCCESS_GODDESS_TRANSCEND_EXEC` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_FAILED_GODDESS_TRANSCEND_EXEC` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_SUCCESS_GODDESS_EVOLUTION_EXEC` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_SUCCESS_ICOR_PRESET_CHANGE_NAME` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_SUCCESS_ICOR_PRESET_ENGRAVE` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_FAILED_ICOR_PRESET_ENGRAVE` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_SUCCESS_ICOR_PRESET_ENGRAVE_APPLY` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_SUCCESS_ICOR_PRESET_ENGRAVE_ICOR` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_GODDESS_SOCKET_UPDATE` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_SUCCESS_GODDESS_MAKE_EFFECT` | `RegisterMsg` | `(frame, msg, item_name, recipe_id)` | goddess_equip_manager.lua
+`MSG_SUCCESS_GODDESS_MAKE_EXEC` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_FAILED_GODDESS_MAKE_EXEC` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_SUCCESS_GODDESS_INHERIT_EXEC` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`MSG_SUCCESS_GODDESS_CONVERT_EXEC` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua
+`ON_UI_TUTORIAL_NEXT_STEP` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | goddess_equip_manager.lua<br>itemsandraoneline_revert_random.lua<br>itemsandrarevertrandom.lua<br>itemunrevertrandom.lua<br>item_cabinet.lua
+`GODDESS_ROULETTE_START` | `RegisterMsg` | `(frame, msg, argStr)` | goddess_roulette.lua
+`GODDESS_ROULETTE_STATE_UPDATE` | `RegisterMsg` | `(frame, msg, argStr)` | goddess_roulette.lua
+`GODDESS_ROULETTE_ITEM_UPDATE` | `RegisterMsg` | `(frame, msg, argStr)` | goddess_roulette.lua
+`FIELD_BOSS_WORLD_EVENT_START` | `RegisterMsg` | `(frame)` | godprotection.lua<br>minimized_godprotection_button.lua
+`FIELD_BOSS_WORLD_EVENT_END` | `RegisterMsg` | `(frame)` | godprotection.lua<br>minimized_godprotection_button.lua
+`FIELD_BOSS_WORLD_EVENT_ITEM_GET` | `RegisterMsg` | `(frame, msg, argStr, itemid)` | godprotection.lua
+`FIELD_BOSS_WORLD_EVENT_LEGEND_ITEM_GET` | `RegisterMsg` | `(frame, msg, argStr, itemid)` | godprotection.lua
+`UPDATE_GRIMOIRE_UI` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | Grimoire.lua
+`DO_OPEN_GRIMOIRE_UI` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | Grimoire.lua
+`SORCERER_OBEY_BUFF` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | Grimoire.lua
+`GD_RANK` | `RegisterMsg` | `(frame, msg, argStr, gp)` | guardgauge.lua
+`PVP_TIME_TABLE` | `RegisterMsg` | `()` | guildbattle_league.lua<br>worldpvp.lua
+`PVP_HISTORY_UPDATE` | `RegisterMsg` | `()` | guildbattle_league.lua<br>worldpvp.lua
+`PREV_GUILD_RANK_INFO` | `RegisterMsg` | `(frame)` | guildbattle_ranking.lua
+`ALL_SEASON_TOP_RANK_INFO` | `RegisterMsg` | `(frame)` | guildbattle_ranking.lua
+`ENABLE_CREATE_GUILD_NAME` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | guildcreate.lua
+`GUILD_EVENT_RECRUITING_START` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | guildeventpopup.lua
+`GUILD_EVENT_RECRUITING_END` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | guildeventpopup.lua
+`GUILD_EVENT_RECRUITING_LIST` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | guildeventpopup.lua
+`GUILD_EVENT_RECRUITING_ADD` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | guildeventpopup.lua
+`GUILD_EVENT_RECRUITING_REMOVE` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | guildeventpopup.lua
+`GUILD_EVENT_RECRUITING_IN` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | guildeventpopup.lua
+`GUILD_EVENT_RECRUITING_OUT` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | guildeventpopup.lua
+`GUILD_EVENT_WAITING_LOCATION` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | guildeventpopup.lua
+`GUILD_EVENT_START_REQUEST_MSG_BOX` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | guildEventSelect.lua
+`OPEN_DLG_GUILDGROWTH` | `RegisterMsg` | `(frame)` | guildgrowth.lua
+`GUILD_PROPERTY_UPDATE` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame)`<br>`(frame, msg, argStr, argNum)` | guildgrowth.lua<br>guildinfo.lua
+`GUILD_SKILL_UPDATE` | `RegisterOpenOnlyMsg` | `()` | guildgrowth.lua
+`GUILD_MEMBER_PROP_UPDATE` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame)` | guildgrowth.lua<br>guildinfo.lua<br>guild_mileage_change.lua
+`GUILD_AGIT_INFO_RECEIVE` | `RegisterMsg` | `(frame)` | guildgrowth.lua
+`GUILD_NEUTRALITY_UPDATE` | `RegisterMsg` | `()` | guildinfo.lua
+`GUILD_UPDATE_PROFILE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | guildinfo.lua
+`UPDATE_GUILD_ONE_SAY` | `RegisterMsg` | `()` | guildinfo.lua
+`UPDATE_GUILD_ASSET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | guildinfo.lua
+`GUILD_NEUTRALITY_ALARM_FAIL` | `RegisterMsg` | `()` | guildinfo.lua
+`GUILD_WAREHOUSE_ITEM_ADD` | `RegisterMsg` | `()` | guildinfo.lua
+`GUILD_WAREHOUSE_ITEM_LIST` | `RegisterMsg` | `()` | guildinfo.lua
+`GUILD_ASSET_LOG_UPDATE` | `RegisterMsg` | `()` | guildinfo.lua
+`GUILD_INFO_UPDATE` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)`<br>`()`<br>`(frame, msg, a, b, c)` | guildinfo.lua<br>map.lua<br>minimap.lua
+`GUILD_MEMBER_INFO_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | guildinfo.lua
+`GUILD_ENTER` | `RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`(frame)` | guildinfo.lua<br>sysmenu.lua
+`GUILD_OUT` | `RegisterMsg` | `(frame)` | guildinfo.lua
+`MYPC_GUILD_JOIN` | `RegisterMsg` | `(frame)` | guildinfo.lua
+`GUILD_EMBLEM_UPDATE` | `RegisterMsg` | `(frame,  msg, argStr, argNum)` | guildinfo.lua
+`COLONY_ENTER_CONFIG_FAIL` | `RegisterMsg` | `()` | guildinfo.lua
+`GUILD_MASTER_REQUEST` | `RegisterMsg` | `(frame, msg, argStr)` | guildinfo.lua
+`GUILD_JOINT_INV_ITEM_LIST` | `RegisterMsg` | `()` | guildinfo.lua
+`UPDATE_GUILD_MILEAGE` | `RegisterMsg` | `()` | guildinfo.lua<br>propertyshop.lua
+`TOGGLEON_GUILD_NEUTRALITY` | `RegisterMsg` | `()` | guildinfo.lua
+`RECEIVE_GUILD_AGIT_INFO` | `RegisterMsg` | `()` | guildinfo.lua
+`START_GUILD_HOUSING_SHOP` | `RegisterMsg` | `()` | guildinfo.lua<br>housing_shop.lua
+`RECEIVE_OTHER_GUILD_AGIT_INFO` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | guildinfo_detail.lua
+`SERVER_GUILD_OUT_DATE_CHECK` | `RegisterMsg` | `()` | guildinfo_detail.lua
+`CLEAR_ACCEPT_GUILDSKILL_MSGBOX` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | guildmembergo.lua
+`CALLBACK_DISTRIBUTE_CONTRIBUTION` | `RegisterMsg` | `(frame)` | guild_distribute_contribution.lua
+`REFRESH_DISTRIBUTE_CONTRIBUTION` | `RegisterMsg` | `(frame)` | guild_distribute_contribution.lua
+`UPDATE_GUILD_VEHICLE` | `RegisterMsg` | `(frame, msg, strarg, numarg)` | guild_vehicle.lua
+`HAIR_GACHA_POPUP` | `RegisterMsg` | `(frame, msg, itemname, itemcnt)` | hair_gacha_popup.lua
+`HAIR_GACHA_POPUP_10` | `RegisterMsg` | `(frame, msg, itemname, itemcnt)` | hair_gacha_popup.lua
+`RBOX_GACHA_POPUP` | `RegisterMsg` | `(frame, msg, itemname, itemcnt)` | hair_gacha_popup.lua
+`RBOX_GACHA_POPUP_10` | `RegisterMsg` | `(frame, msg, itemname, itemcnt)` | hair_gacha_popup.lua
+`LETICIA_POPUP` | `RegisterMsg` | `(frame, msg, itemname, itemcnt)` | hair_gacha_popup.lua
+`LETICIA_POPUP_10` | `RegisterMsg` | `(frame, msg, itemname, itemcnt)` | hair_gacha_popup.lua
+`OPEN_COUNT_REWARD_SET` | `RegisterMsg` | `(frame, msg, retStr)` | hair_gacha_popup.lua
+`FAME_RANK_UPDATED` | `RegisterMsg` | `(frame)` | halloffame.lua
+`RANK_UI` | `RegisterMsg` | `(frame, msg, showallCategory, num)` | halloffame.lua
+`STANCE_CHANGE` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua
+`NAME_UPDATE` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua
+`STAT_UPDATE` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`(frame)` | headsupdisplay.lua<br>status.lua
+`TAKE_DAMAGE` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua
+`TAKE_HEAL` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua
+`STA_UPDATE` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua
+`PC_PROPERTY_UPDATE` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua<br>skillability.lua
+`CANT_RUN_STA` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua
+`CANT_JUMP_STA` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua
+`CAUTION_DAMAGE_INFO` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua
+`CAUTION_DAMAGE_INFO_RELEASE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua
+`CHANGE_RESOLUTION` | `RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`(monsterCardSlotFrame)` | headsupdisplay.lua<br>monstercardslot.lua<br>necronomicon_hud.lua<br>poisonpot_hud.lua
+`CAMP_UPDATE` | `RegisterMsg` | `(frame)` | headsupdisplay.lua
+`PARTY_UPDATE` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame)`<br>`(frame, msg, a, b, c)`<br>`(frame, msg, str, num)` | headsupdisplay.lua<br>map.lua<br>minimap.lua<br>party.lua<br>partyinfo.lua<br>quest.lua
+`SHOW_SOUL_CRISTAL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua
+`UPDATE_SOUL_CRISTAL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua
+`UPDATE_REPRESENTATION_CLASS_ICON` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua<br>status.lua
+`UPDATE_RELIC_EQUIP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | headsupdisplay.lua<br>relicmanager.lua
+`RP_UPDATE` | `RegisterMsg` | `(frame)` | headsupdisplay.lua
+`HELP_MSG_ADD_DBSAVE_NO` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | helpmsgbox.lua<br>piphelp.lua
+`HIDDENABILITY_DECOMPOSE_RESULT` | `RegisterMsg` | `(frame, msg, resultstr)` | hiddenability_decompose.lua
+`HIDDENABILITY_DECOMPOSE_MAKE` | `RegisterMsg` | `(frame, msg)` | hiddenability_make.lua
+`UPDATE_PLAY_HISTORY` | `RegisterMsg` | `(frame, msg, strArg, numArg)` | history.lua
+`OPEN_HOMUNCLUS_INFO` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | homunclus.lua
+`UPDATE_HOMUNCLUS_SKILL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | homunclus.lua
+`START_HOTKEY_EMPHASIZE` | `RegisterMsg` | `(frame, msg, iconName, num)` | hotkey_emphasize.lua
+`HOUSINGCRAFT_UPDATE_ENDTIME` | `RegisterMsg` | `(frame, msg, argStr)`<br>`(frame, msg)` | housing_craft.lua<br>minimized_housing_craft.lua
+`SUCCESS_RECEIVE_HOUSINGCRAFT_GOODS` | `RegisterMsg` | `(frame)` | housing_craft.lua
+`SUCCESS_USE_HOUSINGCRAFT_COUPON` | `RegisterMsg` | `(frame)` | housing_craft.lua
+`FURNITURE_NOT_EXIST` | `RegisterMsg` | `(frame)` | housing_craft.lua
+`PERSONAL_HOUSING_BUY_BACKGROUND` | `RegisterMsg` | `()` | housing_editmode.lua
+`PERSONAL_HOUSING_IS_REALLY_ENTER` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | housing_editmode.lua
+`PERSONAL_HOUSING_IS_REALLY_ENTER_PARTY` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | housing_editmode.lua
+`RECEIVE_GUILD_AGIT_WEAPON` | `RegisterMsg` | `()` | housing_lab.lua
+`RECEIVE_GUILD_AGIT_ARMOR` | `RegisterMsg` | `()` | housing_lab.lua
+`RECEIVE_GUILD_AGIT_ATTRIBUTE` | `RegisterMsg` | `()` | housing_lab.lua
+`RECEIVE_GUILD_AGIT_DUNGEON` | `RegisterMsg` | `()` | housing_lab.lua
+`REFRESH_GUILD_AGIT_WEAPON` | `RegisterMsg` | `()` | housing_lab.lua
+`REFRESH_GUILD_AGIT_ARMOR` | `RegisterMsg` | `()` | housing_lab.lua
+`REFRESH_GUILD_AGIT_ATTRIBUTE` | `RegisterMsg` | `()` | housing_lab.lua
+`REFRESH_GUILD_AGIT_DUNGEON` | `RegisterMsg` | `()` | housing_lab.lua
+`HOUSING_LAB_EXTEND_OPEN` | `RegisterMsg` | `(labName)` | housing_lab_extend.lua
+`RECEIVE_HOUSING_LAB_EXTEND_WEAPON` | `RegisterMsg` | `()` | housing_lab_extend.lua
+`RECEIVE_HOUSING_LAB_EXTEND_ARMOR` | `RegisterMsg` | `()` | housing_lab_extend.lua
+`RECEIVE_HOUSING_LAB_EXTEND_ATTRIBUTE` | `RegisterMsg` | `()` | housing_lab_extend.lua
+`RECEIVE_HOUSING_LAB_EXTEND_PRODUCTION` | `RegisterMsg` | `()` | housing_lab_extend.lua
+`ENTER_PERSONAL_HOUSE` | `RegisterMsg` | `(parent, msg, argStr)`<br>`(frame, msg, argStr, argNum)` | housing_promote_write.lua<br>minimized_guild_housing.lua<br>minimized_housing_craft.lua<br>minimized_personal_housing.lua
+`HOUSING_PROMOTE_THUMBNAIL_CREATE_SUCCESS` | `RegisterMsg` | `(frame, msg, fullPath)` | housing_promote_write.lua
+`GUILD_HOUSING_SHOP` | `RegisterMsg` | `(frame)` | housing_shop.lua
+`START_HOUSING_SHOP_BUTTON_BUYSELL` | `RegisterMsg` | `()` | housing_shop.lua
+`PERSONAL_HOUSING_SHOP` | `RegisterMsg` | `(frame)` | housing_shop.lua<br>housing_shop_payment.lua
+`OPEN_DLG_ICORADD_MULTIPLE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | icoradd_multiple.lua
+`MSG_SUCCESS_ICOR_ADD_MULTIPLE` | `RegisterMsg` | `(frame)` | icoradd_multiple.lua
+`OPEN_DLG_ICORRELEASE_MULTIPLE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | icorrelease_multiple.lua
+`MSG_SUCCESS_ICOR_RELEASE_MULTIPLE` | `RegisterMsg` | `(frame)` | icorrelease_multiple.lua
+`OPEN_DLG_ICORRELEASE_RANDOM_MULTIPLE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | icorrelease_random_multiple.lua
+`MSG_SUCCESS_ICOR_RELEASE_RANDOM_MULTIPLE` | `RegisterMsg` | `(frame)` | icorrelease_random_multiple.lua
+`MOVE_ZONE` | `RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`()` | indunenter.lua<br>mic.lua
+`CLOSE_UI` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | indunenter.lua
+`UPDATE_MYTHIC_DUNGEON_PATTERN` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | indunenter.lua
+`CHAT_INDUN_UI_OPEN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | induninfo.lua
+`WEEKLY_BOSS_UI_UPDATE` | `RegisterMsg` | `()`<br>`(frame,msg)` | induninfo.lua<br>weeklyboss_patterninfo.lua
+`FIELD_BOSS_MONSTER_UPDATE` | `RegisterMsg` | `(frame,msg,argStr,argNum)`<br>`(frame,msg)` | induninfo.lua<br>weeklyboss_patterninfo.lua
+`FIELD_BOSS_RANKING_UPDATE` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | induninfo.lua
+`BORUTA_RANKING_UI_UPDATE` | `RegisterMsg` | `()` | induninfo.lua
+`FAVORITE_CHANGE` | `RegisterMsg` | `(frame, msg, groupID)` | induninfo.lua
+`OPEN_INDUN_REWARD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | indun_reward.lua
+`INDUN_REWARD_RESULT` | `RegisterMsg` | `(frame, msg, str, arg)` | indun_reward.lua
+`ENABLE_RETURN_BUTTON` | `RegisterMsg` | `(f, msg, argStr, argNum)` | indun_reward.lua
+`INDUN_REWARD_RESULT_TIME_SET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | indun_reward.lua
+`RETURN_PLAYERS_SHORTCUT_CHECK_MSG` | `RegisterMsg` | `(frame, msg, curCnt, maxCnt)` | indun_reward.lua
+`OPEN_INDUN_REWARD_HUD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | indun_reward_hud.lua
+`SETTEXT_INDUN_REWARD_HUD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | indun_reward_hud.lua
+`REFRESH_INDUN_REWARD_HUD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | indun_reward_hud.lua
+`CLOSE_INDUN_REWARD_HUD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | indun_reward_hud.lua
+`INGAME_PRIVATE_ALERT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | ingamealert.lua
+`INDUN_ASK_PARTY_MATCH` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | ingamealert.lua
+`INDUN_ASK_PARTY_MATCH_AUTO_CHALLENGE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | ingamealert.lua
+`SOLD_ITEM_NOTICE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | ingamealert.lua
+`RECEIVABLE_SILVER_NOTICE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | ingamealert.lua
+`RECEIVABLE_TAX_PAYMENT_NOTICE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | ingamealert.lua
+`FIELD_BOSS_WORLD_EVENT_RECEIVABLE_ITEM_NOTICE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | ingamealert.lua
+`FIELD_BOSS_WORLD_EVENT_RECEIVABLE_SILVER_NOTICE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | ingamealert.lua
+`MSG_UPDATE_EVENTBANNER_UI` | `RegisterMsg` | `(frame)` | ingameeventbanner.lua
+`DO_OPEN_EVENTBANNER_UI` | `RegisterMsg` | `(frame)` | ingameeventbanner.lua
+`EVENTBANNER_SOLODUNGEON` | `RegisterMsg` | `(frame)` | ingameeventbanner.lua
+`EVENTBANNER_TEAMBATTLE` | `RegisterMsg` | `(frame, msg, strarg, numarg)` | ingameeventbanner.lua
+`EVENTBANNER_USERTYPE` | `RegisterMsg` | `(frame, msg, strarg, numarg)` | ingameeventbanner.lua
+`INSTRUMENT_KEYBOARD_OPEN` | `RegisterMsg` | `(frame, msg, type)` | instrument_keyboard.lua
+`INSTRUMENT_KEYBOARD_CLOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | instrument_keyboard.lua
+`INTE_WARP` | `RegisterOpenOnlyMsg` | `(frame, changeDirection)` | inte_warp.lua
+`INTE_SKILL_WARP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | inte_warp_detail.lua
+`ITEM_LOCK_FAIL` | `RegisterMsg` | `(frame, msg, argStr, agrNum)` | inventory.lua
+`EQUIP_ITEM_LIST_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | inventory.lua
+`INV_ITEM_LIST_GET` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | inventory.lua
+`INV_ITEM_REMOVE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | inventory.lua
+`INV_DRAW_MONEY_TEXT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | inventory.lua
+`CHANGE_INVINDEX` | `RegisterMsg` | `(frame, msg, fromInvIndex, toInvIndex)` | inventory.lua
+`ACCOUNT_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`(frame)` | inventory.lua<br>soldierlist.lua
+`JUNGTAN_SLOT_UPDATE` | `RegisterMsg` | `(frame, msg, str, itemType)` | inventory.lua<br>joystickquickslot.lua<br>quickslotnexpbar.lua
+`EXP_ORB_ITEM_ON` | `RegisterMsg` | `(frame, msg, str, itemType)` | inventory.lua<br>joystickquickslot.lua<br>quickslotnexpbar.lua
+`EXP_ORB_ITEM_OFF` | `RegisterMsg` | `(frame, msg, str, itemType)` | inventory.lua<br>joystickquickslot.lua<br>quickslotnexpbar.lua
+`EXP_SUB_ORB_ITEM_ON` | `RegisterMsg` | `(frame, msg, str, itemType)` | inventory.lua<br>joystickquickslot.lua<br>quickslotnexpbar.lua
+`EXP_SUB_ORB_ITEM_OFF` | `RegisterMsg` | `(frame, msg, str, itemType)` | inventory.lua<br>joystickquickslot.lua<br>quickslotnexpbar.lua
+`TOGGLE_ITEM_SLOT_ON` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | inventory.lua<br>joystickquickslot.lua<br>quickslotnexpbar.lua
+`TOGGLE_ITEM_SLOT_OFF` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | inventory.lua<br>joystickquickslot.lua<br>quickslotnexpbar.lua
+`WEIGHT_UPDATE` | `RegisterOpenOnlyMsg` | `(frame)` | inventory.lua
+`SLOTCOUNT_UPDATE` | `RegisterOpenOnlyMsg` | `(frame)` | inventory.lua
+`UPDATE_ITEM_APPRAISAL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | inventory.lua
+`SWITCH_GENDER_SUCCEED` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | inventory.lua
+`RESET_ABILITY_UP` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | inventory.lua<br>skillability.lua<br>skillstat.lua
+`APPRAISER_FORGERY` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | inventory.lua
+`LOCK_FAIL` | `RegisterMsg` | `(frame, msg, argStr, agrNum)` | inventory.lua
+`REFRESH_ITEM_TOOLTIP` | `RegisterOpenOnlyMsg` | `()` | inventory.lua
+`TOGGLE_EQUIP_ITEM_TOOLTIP_DESC` | `RegisterMsg` | `()` | inventory.lua
+`ABILITY_LIST_GET` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `()`<br>`(frame, msg, skillID, argNum)` | inventory.lua<br>skillability.lua<br>weaponswap.lua
+`UPDATE_LOCK_STATE` | `RegisterMsg` | `(frame, msg, itemGuid, lockState)` | inventory.lua
+`UPDATE_TRUST_POINT` | `RegisterMsg` | `(frame, msg, argStr, trustPoint)` | inventory.lua
+`JOURNAL_DETAIL_CRAFT_EXEC_START` | `RegisterMsg` | `(frame, msg, str, time)` | itemCraft.lua
+`JOURNAL_DETAIL_CRAFT_EXEC_FAIL` | `RegisterMsg` | `(mainFrame, msg, str, time)` | itemCraft.lua
+`JOURNAL_DETAIL_CRAFT_EXEC_SUCCESS` | `RegisterMsg` | `(frame, msg, str, time)` | itemCraft.lua
+`RESTQUICKSLOT_CLOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | itemCraft.lua<br>restquickslot.lua
+`JOYSTICK_RESTQUICKSLOT_CLOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | itemCraft.lua<br>joystickrestquickslot.lua
+`PROGRESS_ITEM_CRAFT_MSG` | `RegisterMsg` | `()` | itemCraft.lua
+`SUCCESS_ITEM_AWAKENING` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | itemdungeon.lua
+`ITEM_PICK` | `RegisterMsg` | `(frame, msg, itemType, itemCount)` | itemmsgqueue.lua
+`OPEN_DLG_ITEMOPTIONADD` | `RegisterMsg` | `(frame)` | itemoptionadd.lua
+`MSG_SUCCESS_ITEM_OPTION_ADD` | `RegisterMsg` | `(frame)` | itemoptionadd.lua
+`OPEN_DLG_ITEMOPTIONEXTRACT` | `RegisterMsg` | `(frame)` | itemoptionextract.lua
+`MSG_RUN_SUCCESS_EFFECT` | `RegisterMsg` | `()` | itemoptionextract.lua
+`MSG_RUN_FAIL_EFFECT` | `RegisterMsg` | `()` | itemoptionextract.lua
+`OPEN_DLG_ITEMOPTIONLEGENDEXTRACT` | `RegisterMsg` | `(frame)` | itemoptionlegendextract.lua
+`MSG_SUCCESS_ITEM_OPTION_LEGEND_EXTRACT` | `RegisterMsg` | `(pc, msgname, argStr, argNum)` | itemoptionlegendextract.lua
+`MSG_FAIL_ITEM_OPTION_LEGEND_EXTRACT` | `RegisterMsg` | `(frame)` | itemoptionlegendextract.lua
+`OPEN_DLG_ITEMOPTIONRELEASE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | itemoptionrelease.lua
+`MSG_SUCCESS_ITEM_OPTION_RELEASE` | `RegisterMsg` | `(frame)` | itemoptionrelease.lua
+`OPEN_DLG_ITEMOPTIONRELEASE_RANDOM` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | itemoptionrelease_random.lua
+`MSG_SUCCESS_ITEM_OPTION_RELEASE_RANDOM` | `RegisterMsg` | `(frame)` | itemoptionrelease_random.lua
+`ITEMOPTIONRELOCATE_SUCCESS` | `RegisterMsg` | `(pc, msg, dest_guid)` | itemoptionrelocate.lua
+`OPEN_DLG_ITEMRANDOMRESET` | `RegisterMsg` | `(frame)` | itemrandomreset.lua
+`MSG_SUCCESS_RESET_RANDOM_OPTION` | `RegisterMsg` | `(frame)` | itemrandomreset.lua
+`MSG_SUCCESS_REVERT_RANDOM_OPTION` | `RegisterMsg` | `(frame)` | itemrevertrandom.lua
+`OPEN_DLG_ITEMRULLET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | itemrullet.lua
+`SUCCESS_REINFORCE_SEAL` | `RegisterMsg` | `(frame, msg, result, argNum)` | itemrullet.lua
+`SUCCESS_SANDRA_ONELINE_REVERT_RANDOM_OPTION` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | itemsandraoneline_revert_random.lua
+`MSG_SUCCESS_SANDRAREVERT_RANDOM_OPTION` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | itemsandrarevertrandom.lua
+`SUCCESS_SANDRA_4LINE_REVERT_RANDOM_OPTION` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | itemsandra_4line_revert_random.lua
+`SUCCESS_SANDRA_6LINE_REVERT_RANDOM_OPTION` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | itemsandra_6line_revert_random.lua
+`OPEN_DLG_ITEMTRANSCEND` | `RegisterMsg` | `(frame, msg, argStr, isLegendShop)` | itemtranscend.lua
+`OPEN_DLG_ITEMTRANSCEND_BREAK` | `RegisterMsg` | `(frame)` | itemtranscend_break.lua
+`OPEN_DLG_ITEMTRANSCEND_REMOVE` | `RegisterMsg` | `(frame, msg, argStr, isLegendShop)` | itemtranscend_remove.lua
+`MSG_SUCCESS_UNREVERT_RANDOM_OPTION` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | itemunrevertrandom.lua
+`UPDATE_ITEM_CABINET_LIST` | `RegisterMsg` | `(frame)` | item_cabinet.lua
+`ITEM_CABINET_SUCCESS_ENCHANT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | item_cabinet.lua
+`ITEM_POINT_EXTRACTOR_EXECUTE` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | item_point_extractor.lua<br>propertyshop.lua
+`DRAW_ITEM_RESULT` | `RegisterMsg` | `(frame, msg, itemInfoStr, argNum)` | item_result.lua
+`JOB_SELECT_GUIDE_OPEN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | job_select_guide.lua
+`JOYSTICK_QUICKSLOT_LIST_GET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | joystickquickslot.lua
+`JOYSTICK_INPUT` | `RegisterMsg` | `()` | joystickquickslot.lua
+`JOYSTICK_RESTQUICKSLOT_OPEN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | joystickrestquickslot.lua
+`LAYER_PC_PROP_UPDATE` | `RegisterMsg` | `(frame)` | layerscore.lua
+`LAYER_TIME` | `RegisterMsg` | `(frame)` | layerscore.lua
+`RESULT_LEGEND_DECOMPOSE` | `RegisterMsg` | `(frame, msg, rewardClassName, rewardCnt)` | legenddecompose.lua
+`SUCCESS_LEGEND_PREFIX` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | legendprefix.lua
+`FAIL_LEGEND_PREFIX` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | legendprefix.lua
+`OPEN_DLG_LEGEND_CRAFT` | `RegisterMsg` | `(frame, msg, argStr)` | legend_craft.lua
+`SUCCESS_LEGEND_CRAFT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | legend_craft.lua
+`END_LEGEND_CRAFT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | legend_craft.lua
+`LEGEND_MISC_EXCHANGE_SUCCESS` | `RegisterMsg` | `(frame, msg, dest_guid)` | legend_misc_exchange.lua
+`LETICIA_CUBE_NOT_ENABLE` | `RegisterMsg` | `()` | leticia_cube.lua
+`LOCALAREA_ENTER` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | localareaname.lua<br>map.lua
+`LOCALAREA_LEAVE` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | localareaname.lua<br>map.lua
+`MSG_REMOVE_GEM` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | managegem.lua
+`DO_OPEN_MANAGE_GEM_UI` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | managegem.lua
+`MSG_MAKE_ITEM_SOCKET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | managegem.lua
+`MANU_START` | `RegisterMsg` | `(frame, msg, str, time)` | manufac_renew.lua
+`MANU_STOP` | `RegisterMsg` | `(frame)` | manufac_renew.lua
+`MANU_END` | `RegisterMsg` | `(frame, msg, madeItemID)` | manufac_renew.lua
+`MAP_CHARACTER_UPDATE` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | map.lua<br>map_aos.lua<br>minimap.lua
+`REVEAL_ALL` | `RegisterMsg` | `(frame)` | map.lua
+`MAP_CHARACTER_ADD` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | map.lua
+`MAP_CHARACTER_REMOVE` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | map.lua
+`ANGLE_UPDATE` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, msg, argStr, argNum)` | map.lua<br>map_aos.lua<br>minimap.lua<br>questinfoset_2.lua
+`WIDEAREA_ENTER` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | map.lua
+`WIDEAREA_LEAVE` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | map.lua
+`GET_NEW_QUEST` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame)`<br>`(frame, msg, argStr, argNum)` | map.lua<br>minimap.lua<br>quest.lua<br>questinfo.lua
+`NPC_STATE_UPDATE` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame)` | map.lua<br>minimap.lua
+`DESTROY_GUILD_MEMBER_ICON` | `RegisterMsg` | `(frame, msg, guild_member_aid)` | map.lua
+`PARTY_INST_UPDATE` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, msg, str, partyType)`<br>`(frame, msg, a, b, c)`<br>`(frame)` | map.lua<br>minimap.lua<br>party.lua<br>partyinfo.lua
+`MON_MINIMAP` | `RegisterMsg` | `()` | map.lua<br>minimap.lua
+`MON_MINIMAP_END` | `RegisterMsg` | `()` | map.lua<br>minimap.lua
+`COLONY_MONSTER` | `RegisterMsg` | `(frame, msg, posStr, monID)` | map.lua<br>minimap.lua
+`REMOVE_COLONY_MONSTER` | `RegisterMsg` | `(frame, msg, handlePosStr, monID)` | map.lua<br>minimap.lua
+`ON_QUEST_UPDATED` | `RegisterMsg` | `(frame)` | map.lua<br>minimap.lua
+`QUEST_DELETED` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame)`<br>`(frame, isFirstOpen)` | map.lua<br>minimap.lua
+`VIDEO_CAMERA_OPTION` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | map.lua
+`ON_DESTROY_NPC_ICON` | `RegisterMsg` | `(mapframe)` | map.lua<br>minimap.lua
+`UPDATE_MGAME_POSITION` | `RegisterOpenOnlyMsg`<br>`RegisterMsg` | `(frame, msg, argstr, argnum)`<br>`()` | map.lua<br>minimap.lua
+`MAP_AREA_TEXT` | `RegisterMsg` | `(frame, msg, name, range)` | mapareatext.lua
+`AOS_OBJ_ENTER` | `RegisterMsg` | `(frame, msg, str, handle, info)` | map_aos.lua
+`AOS_OBJ_LEAVE` | `RegisterMsg` | `(frame, msg, str, handle)` | map_aos.lua
+`AOS_POS_UPDATE` | `RegisterMsg` | `(frame, msg, str, handle, info)` | map_aos.lua
+`CHANGE_VIEW_FOCUS` | `RegisterMsg` | `(frame, msg, name, handle)` | map_aos.lua
+`MAP_EXPLORE_NOTIFY_INIT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | map_explore_notify.lua
+`MAP_EXPLORE_NOTIFY_COMPLETE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | map_explore_notify.lua
+`OPEN_MAP_RECON` | `RegisterMsg` | `(frame, msg, itemClsName, mapID)` | map_recon.lua
+`MAP_RECON_LIST` | `RegisterMsg` | `(frame, msg, strarg, mapID)` | map_recon.lua
+`REMOVE_MAP_RECON` | `RegisterMsg` | `(frame, msg, strarg, mapID)` | map_recon.lua
+`CLOSE_MAP_RECON` | `RegisterMsg` | `(frame)` | map_recon.lua
+`MARKET_ITEM_LIST` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | market.lua<br>market_sell.lua
+`OPEN_DLG_MARKET` | `RegisterMsg` | `(frame)` | market.lua
+`CABINET_ITEM_LIST` | `RegisterMsg` | `(frame)` | market_cabinet.lua
+`MARKET_REGISTER` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | market_sell.lua
+`MARKET_SELL_LIST` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | market_sell.lua
+`MARKET_MINMAX_INFO` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | market_sell.lua
+`RESPONSE_MIN_PRICE` | `RegisterMsg` | `(frame, msg, minPrice, argNum)` | market_sell.lua
+`WEB_RELOAD_SELL_LIST` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | market_sell.lua
+`UPDATE_MARKET_TRADE_LIMIT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | market_sell.lua
+`SUCCESS_LOAD_REGISTERED_ITEM_LIST` | `RegisterMsg` | `(msg)` | market_sell.lua
+`MCY_KILL_PC` | `RegisterMsg` | `(frame, msg, str, num)` | mcy_killer.lua
+`MCY_MY_KILL` | `RegisterMsg` | `(frame, msg, str, cnt)` | mcy_killmsg.lua<br>pvpmsg.lua
+`MCY_KILL_NOTICE` | `RegisterMsg` | `(frame, msg, str, teamID)` | mcy_kill_notice.lua
+`MGAME_SCORE_TEXT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | mgamescore.lua
+`MGAME_SCORE_RANK` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | mgamescore.lua
+`MGAME_ZONE_ENTER` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | mgamescore.lua
+`DO_DISAPPEAR_MINEPVP_TIMER` | `RegisterMsg` | `()` | minepvpscoreboard.lua
+`START_MINI_TEXT` | `RegisterMsg` | `(frame, msg, str, num)` | minigame.lua
+`SEND_MINIGAME_RESULT` | `RegisterMsg` | `(frame, msg, str, num)` | minigame.lua
+`RAISE_MINIGAME_EVENT` | `RegisterMsg` | `(frame, msg, remainSec, joinCount)` | minigameevent.lua
+`MINIGAME_EVENT_PC_LIST` | `RegisterMsg` | `(frame, msg, joinCount)` | minigameevent.lua
+`MINIGAMEEVENT_START` | `RegisterMsg` | `(frame)` | minigameevent.lua
+`MINIGAMEEVENT_OUT` | `RegisterMsg` | `(frame)` | minigameevent.lua
+`MINIGAMEEVENT_DESTROYED` | `RegisterMsg` | `(frame)` | minigameevent.lua
+`PVP_PLAYING_UPDATE` | `RegisterMsg` | `(frame, msg, argStr,argNum)` | minimizedalarm.lua
+`PVP_MINE_STATE_UPDATE` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | minimizedalarm.lua
+`CASUAL_GAMBLE_START` | `RegisterMsg` | `(frame)` | minimized_casualgamble_button.lua
+`CASUAL_GAMBLE_END` | `RegisterMsg` | `(frame)` | minimized_casualgamble_button.lua
+`ENTER_GUILD_AGIT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | minimized_guild_housing.lua
+`SET_PERSONAL_HOUSE_NAME` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | minimized_personal_housing.lua
+`PERSONAL_HOUSING_IS_REALLY_OUT` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | minimized_personal_housing.lua
+`MINIMIZED_TUTORIALNOTE_EFFECT_CHECK` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | minimized_tutorialnote_button.lua
+`MINIMIZED_TUTORIALNOTE_EFFECT_OFF` | `RegisterMsg` | `(frame)` | minimized_tutorialnote_button.lua
+`ITEM_MIX_END` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | mixer.lua
+`PC_PROPERTY_UPDATE_TO_MONBASEINFO` | `RegisterMsg` | `(baseFrame, msg, argStr, argNum)` | monsterbaseinfo.lua
+`TARGET_CLOSE` | `RegisterMsg` | `(msgFrame, msg, argStr, handle)` | monsterbaseinfo.lua
+`TARGET_CLEAR` | `RegisterMsg` | `(msgFrame, msg, argStr, handle)` | monsterbaseinfo.lua<br>targetbuff.lua<br>targetinfo.lua<br>targetspace.lua
+`TARGET_UPDATE` | `RegisterMsg` | `(msgFrame, msg, argStr, argNum)` | monsterbaseinfo.lua<br>targetinfo.lua<br>targetinfotoboss.lua
+`SPC_TARGET_UPDATE` | `RegisterMsg` | `(msgFrame, msg, argStr, handle)` | monsterbaseinfo.lua
+`TARGET_SET` | `RegisterMsg` | `(msgFrame, msg, argStr)`<br>`(frame, msg, argStr, argNum)` | monsterbaseinfo.lua<br>targetbuff.lua<br>targetinfo.lua<br>targetspace.lua
+`UPDATE_SDR` | `RegisterMsg` | `(baseFrame, msg, argStr, argNum)` | monsterbaseinfo.lua<br>targetinfo.lua<br>targetinfotoboss.lua
+`SHIELD_UPDATE` | `RegisterMsg` | `(msgFrame, msg, str, targetHandle)` | monsterbaseinfo.lua
+`SHOW_TARGET_UI` | `RegisterMsg` | `(frame, msg, argStr, handle)` | monsterbaseinfo.lua
+`MON_ENTER_SCENE` | `RegisterMsg` | `(frame, msg, str, handle)` | monsterbaseinfo.lua
+`TARGET_COLORSET` | `RegisterMsg` | `()` | monsterbaseinfo.lua
+`DO_OPEN_MONSTERCARDSLOT_UI` | `RegisterMsg` | `()` | monstercardslot.lua
+`MSG_PLAY_LEGENDCARD_OPEN_EFFECT` | `RegisterMsg` | `()` | monstercardslot.lua
+`MSG_PLAY_GODDESSCARD_OPEN_EFFECT` | `RegisterMsg` | `()` | monstercardslot.lua
+`MON_WEAK_INFO_SET` | `RegisterMsg` | `(frame, msg, iconName, handle)` | monweakinfo.lua
+`UPDATE_MON_GUILD_HUD` | `RegisterMsg` | `(frame, msg, strarg, numarg)` | mon_guild_hud.lua
+`MYTHIC_DUNGEON_HUD_INFO_INIT` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | mythic_dungeon_hud.lua
+`MYTHIC_DUNGEON_HUD_TIMER_INIT` | `RegisterMsg` | `(frame,msg,now_time,total_time)` | mythic_dungeon_hud.lua
+`MYTHIC_DUNGEON_HUD_PATTERN_INIT` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | mythic_dungeon_hud.lua
+`REFRESH_MYTHIC_DUNGEON_HUD` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | mythic_dungeon_hud.lua
+`MYTHIC_DUNGEON_HUD_TIMER_UPDATE` | `RegisterMsg` | `(frame,msg,now_time,end_time)` | mythic_dungeon_hud.lua
+`UPDATE_MYTHIC_DUNGEON_SEASON` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | mythic_dungeon_info.lua
+`UPDATE_NECRONOMICON_UI` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | necronomicon.lua<br>necronomicon_hud.lua
+`DO_OPEN_NECRONOMICON_UI` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | necronomicon.lua
+`NOTICE_Dm_timestart` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_5Min` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_3Min` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_2Min` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_1Min` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_30Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_20Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_10Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_5Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_3Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_2Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_1Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefStart5Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefStart4Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefStart3Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefStart2Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefStart1Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefExplan` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefLeft1Min` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefLeft30Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefLeft5Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefLeft4Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefLeft3Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefLeft2Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefLeft1Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefSucces` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_DefFail` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_Boss5Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_Boss4Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_Boss3Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_Boss2Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_Boss1Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_BossKill` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_Trap` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_TrapPlus` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_Clear` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_GetItem` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_UsePotion` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_Dead` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_ResBuff` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_scroll` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_Bell` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_Bomb` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_!` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_SpaceBar` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_OffStart5Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_OffStart4Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_OffStart3Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_OffStart2Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_OffStart1Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_OffLeft2Min` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_OffLeft1Min` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_OffLeft30Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_OffLeft10Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_OffLeft5Sec` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_raid_fail` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_reward_box` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_raid_clear` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_stage_clear` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_stage_start` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_stage_ready` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_move_to_point` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_guildevent_join_complete` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_invenfull` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | notice.lua<br>shop.lua
+`NOTICE_Dm_levelup_base` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua<br>notice_raid_pattern.lua<br>sysmenu.lua
+`NOTICE_Dm_LevelUP_Auto` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_levelup_skill` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_GuildQuestSuccess` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua<br>notice_raid_pattern.lua
+`NOTICE_Dm_GuildQuestFail` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua<br>notice_raid_pattern.lua
+`NOTICE_Dm_Shoptutorial` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_quest_complete` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_Fishing` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_BossAppear` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_GuildColony` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_GuildColony2` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_GuildColony3` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_fanfare` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_Dm_information` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice.lua
+`NOTICE_New_Item` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | noticeitem.lua
+`NOTICE_Dm_Global_Shout` | `RegisterMsg` | `()` | notice_gm.lua
+`NOTICE_MORINGPONIA_TARGET` | `RegisterMsg` | `(frame, msg, iconName, handle)` | notice_on_pc.lua
+`NOTICE_TO_UI` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_on_pc.lua
+`NOTICE_Dm_Raid_Pattern_!` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pattern.lua
+`NOTICE_GLACIER_COLD_BALST` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_GLACIER_ENCHANTMENT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_GLACIER_ENCHANTMENT_LEGEND` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_GILTINE_DEMONICS_LANCE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_GILTINE_DEMONICS_PRANK` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_GILTINE_FIND_COLOR_RED` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_GILTINE_FIND_COLOR_YELLOW` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_GILTINE_DEMONICS_LANCE_REMOVE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_GILTINE_DEMONICS_PRANK_REMOVE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_GILTINE_FIND_COLOR_RED_REMOVE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_GILTINE_FIND_COLOR_YELLOW_REMOVE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_SOLO_BUFF_SEELCT_ICON` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_SOLO_BUFF_SEELCT_ICON_REMOVE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_raid_pc.lua
+`NOTICE_SCREEN` | `RegisterMsg` | `(frame, msg, text, time)` | notice_screen.lua
+`KEYBOARD_TUTORIAL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_tutorial.lua
+`DIALOG_SPACE_TUTORIAL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_tutorial.lua
+`L_KEY_TUTORIAL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_tutorial.lua
+`RETURN_KEY_TUTORIAL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_tutorial.lua
+`EXPCARD_USE_TUTORIAL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_tutorial.lua
+`EXPCARD_USE_TUTORIAL_END` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | notice_tutorial.lua
+`OBLATION_ITEM_LIST` | `RegisterMsg` | `(frame)` | oblation.lua
+`UPDATE_OPEN_INGAMESHOP_BTN` | `RegisterMsg` | `(frame, msg, argStr, itemCnt)` | openingameshopbtn.lua
+`READ_PARCHMENT` | `RegisterMsg` | `(frame, msg, dialog, argNum)` | parchmentread.lua
+`PARTY_NAME_UPDATE` | `RegisterMsg` | `(frame)` | party.lua
+`PARTY_PROPERTY_UPDATE` | `RegisterMsg` | `(frame, msg, str, num)` | party.lua
+`PARTY_PROPERTY_NOTE_UPDATE` | `RegisterMsg` | `(frame, msg, str, num)` | party.lua
+`PARTY_OPTION_RESET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | party.lua
+`PARTY_JOIN` | `RegisterMsg` | `(frame)` | party.lua
+`PARTY_BUFFLIST_UPDATE` | `RegisterMsg` | `(frame)` | partyinfo.lua
+`PARTY_OUT` | `RegisterMsg` | `(frame)` | partyinfo.lua
+`PARTY_INVITE_CANCEL` | `RegisterMsg` | `(frame, msg, familyName, arg2)` | partyinfo.lua
+`PARTY_HISTORY_UPDATE` | `RegisterOpenOnlyMsg` | `(frame, ctrl, argStr, argNum)` | partylist.lua
+`OPEN_SELECT_TARGET` | `RegisterMsg` | `(frame, msg, argStr, showHPGauge)` | party_recommend.lua
+`OPEN_SELECT_TARGET_SUMMON` | `RegisterMsg` | `(frame, msg, argStr)` | party_recommend.lua
+`OPEN_SELECT_BUFF` | `RegisterMsg` | `(frame, msg, argStr)` | party_recommend.lua
+`OPEN_SELECT_ANCIENT` | `RegisterMsg` | `(frame, msg, argStr, showHPGauge)` | party_recommend.lua
+`UPDATE_PCBANG_SHOP_POINT` | `RegisterMsg` | `(timerFrame, msg, argstr, argnum)`<br>`(frame)` | pcbang_point_timer.lua<br>pcbang_shop.lua
+`UPDATE_PCBANG_SHOP_ACCUMULATING_TIME` | `RegisterMsg` | `(timerFrame, msg, argstr, argnum)`<br>`(frame)` | pcbang_point_timer.lua<br>pcbang_shop.lua
+`PCBANG_POPUP_PREVIEW_INIT` | `RegisterMsg` | `(frame, msg, argstr, itemID)` | pcbang_popup_preview.lua
+`PCBANG_SHOP_TOGGLE` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | pcbang_shop.lua
+`UPDATE_PCBANG_SHOP_MAIN_PAGE` | `RegisterOpenOnlyMsg` | `()` | pcbang_shop.lua
+`UPDATE_PCBANG_SHOP_POINTSHOP_LIST` | `RegisterOpenOnlyMsg` | `()` | pcbang_shop.lua
+`UPDATE_PCBANG_SHOP_POINTSHOP_BUY_COUNT` | `RegisterOpenOnlyMsg` | `()` | pcbang_shop.lua
+`UPDATE_PCBANG_SHOP_RENTAL_LIST` | `RegisterOpenOnlyMsg` | `()` | pcbang_shop.lua
+`UPDATE_PCBANG_SHOP_GUIDE_PAGE` | `RegisterOpenOnlyMsg` | `(frame)` | pcbang_shop.lua
+`UPDATE_PCBANG_SHOP_REWARD` | `RegisterOpenOnlyMsg` | `(frame)` | pcbang_shop.lua
+`PCBANG_SHOP_REWARD_RECV` | `RegisterOpenOnlyMsg` | `(frame, msg, argstr, argnum)` | pcbang_shop.lua
+`PCBANG_SHOP_TOTAL_REWARD_RECV` | `RegisterOpenOnlyMsg` | `(frame, msg, argstr, receivedTotalHour)` | pcbang_shop.lua
+`PCBANG_SHOP_POINT_CHANGED` | `RegisterOpenOnlyMsg` | `(frame, msg, argstr, argnum)` | pcbang_shop.lua
+`PCBANG_SHOP_BOUGHTCOUNT_CHANGED` | `RegisterOpenOnlyMsg` | `(frame, msg, argstr, argnum)` | pcbang_shop.lua
+`UPDATE_PETLIST` | `RegisterMsg` | `(frame, msg, argstr)` | petlist.lua
+`PET_PROP_UPDATE` | `RegisterOpenOnlyMsg` | `(frame, msg, strArg)` | pet_info.lua
+`PET_EXP_UPDATE` | `RegisterOpenOnlyMsg` | `(frame)` | pet_info.lua
+`PET_NAME_CHANGED` | `RegisterOpenOnlyMsg` | `(frame, msg, strArg, numArg)` | pet_info.lua
+`COMPANION_UI_OPEN` | `RegisterMsg` | `(frame)` | pet_info.lua
+`COMPANION_AUTO_ATK` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | pet_info.lua
+`COMPANION_REFRESH` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | pet_info.lua
+`PET_LIST` | `RegisterOpenOnlyMsg` | `(frame, msg, str, num)` | pet_list.lua
+`HELP_MSG_CLOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | piphelp.lua
+`MSG_UPDATE_POISONPOT_UI` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | poisonpot.lua<br>poisonpot_hud.lua
+`DO_OPEN_POISONPOT_UI` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | poisonpot.lua<br>poisonpot_hud.lua
+`UPDATE_PORTAL_STONE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | portal_seller.lua
+`ADD_POSTBOX_MSG` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | postbox.lua
+`PROPERTY_SHOP_UI_OPEN` | `RegisterMsg` | `(frame, msg, shopName, argNum)` | propertyshop.lua
+`UPDATE_PROPERTY_SHOP` | `RegisterMsg` | `(frame, msg, shopName, isSuccess)` | propertyshop.lua
+`UPDATE_SKILLMAP` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame)`<br>`(frame, msg, skillID, argNum)` | quest.lua<br>skillability.lua
+`QUEST_UPDATE_` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | quest.lua
+`CUSTOM_QUEST_UPDATE` | `RegisterMsg` | `()` | quest.lua
+`CUSTOM_QUEST_DELETE` | `RegisterMsg` | `()` | quest.lua
+`STYLE_INFO_UPDATE` | `RegisterMsg` | `()` | quest.lua
+`CUSTOM_OPTION_CHECK` | `RegisterMsg` | `()` | quest.lua
+`EPISODE_REWARD_CLEAR` | `RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`(frame)` | quest.lua<br>questepisodereward.lua
+`REQUEST_QUEST_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | quest.lua
+`RELIC_REWARD_CLEAR` | `RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`(frame)` | quest.lua<br>quest_relic_reward.lua
+`DIALOG_QUEST_END` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questend.lua
+`S_OBJ_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questinfo.lua<br>questinfoset_2.lua
+`NPC_ENTER` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questinfo.lua
+`LAYER_CHANGE` | `RegisterMsg` | `(frame, msg, check, updateQuestID)` | questinfoset_2.lua
+`SET_REMAIN_TIME` | `RegisterMsg` | `(frame, msg, check, updateQuestID)` | questinfoset_2.lua
+`END_QUEST_KILLCNT` | `RegisterMsg` | `(frame, msg, argStr, questID)` | questinfoset_2.lua
+`SESSIONOBJ_QUEST_ADD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questinfoset_2.lua
+`QUEST_EFFECT_START` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questinfoset_2.lua
+`PARTY_MEMBER_PROP_UPDATE` | `RegisterMsg` | `(frame)` | questinfoset_2.lua
+`PARTY_MEMBER_UPDATE` | `RegisterMsg` | `(frame)` | questinfoset_2.lua
+`PARTY_SOBJ_UPDATE` | `RegisterMsg` | `(frame)` | questinfoset_2.lua
+`QUESTITEM_SET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questitemuse.lua
+`QUESTITEM_EMPTY` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questitemuse.lua
+`DIALOG_QUEST_PROGRESS` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questprogress.lua
+`SHOW_QUEST_SEL_DLG` | `RegisterMsg` | `(frame, msg, str, questID)` | questreward.lua
+`QUESTREWARD_LEFT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questreward.lua
+`QUESTREWARD_RIGHT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questreward.lua
+`REWARDSELECT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questreward.lua
+`DIALOG_ITEM_SELECT` | `RegisterMsg` | `(frame, msg, str, num)` | questreward.lua
+`DIALOG_QUEST_START` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | queststart.lua
+`QUESTWARPSELECT_UP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questwarp.lua
+`QUESTWARPSELECT_DOWN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questwarp.lua
+`QUESTWARPSELECT_SELECT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | questwarp.lua
+`QUICKSLOT_LIST_GET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | quickslotnexpbar.lua
+`KEYBOARD_INPUT` | `RegisterMsg` | `()` | quickslotnexpbar.lua
+`SKILL_LIST_GET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | quickslotnexpbar.lua<br>skillability.lua
+`SPECIFIC_SKILL_GET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | quickslotnexpbar.lua<br>skillability.lua
+`REGISTER_QUICK_SKILL` | `RegisterMsg` | `(frame, msg, type, index)` | quickslotnexpbar.lua
+`REGISTER_QUICK_ITEM` | `RegisterMsg` | `(frame, msg, type, index)` | quickslotnexpbar.lua
+`INV_ITEM_ADD_FOR_QUICKSLOT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | quickslotnexpbar.lua
+`PC_PROPERTY_UPDATE_TO_QUICKSLOT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | quickslotnexpbar.lua
+`PET_SELECT` | `RegisterMsg` | `()` | quickslotnexpbar.lua
+`QUICK_SLOT_LOCK_STATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | quickslotnexpbar.lua
+`QUICKSLOT_MONSTER_RESET_COOLDOWN` | `RegisterMsg` | `(frame, msg, monName)` | quickslotnexpbar.lua
+`RESET_ABILITY_ACTIVE` | `RegisterMsg`<br>`RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | quickslotnexpbar.lua<br>skillability.lua
+`RESET_ALL_SKILL` | `RegisterMsg` | `()` | quickslotnexpbar.lua
+`DELETE_QUICK_SKILL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | quickslotnexpbar.lua<br>skillability.lua
+`DELETE_SPECIFIC_SKILL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | quickslotnexpbar.lua<br>skillability.lua
+`PC_MACRO_UPDATE` | `RegisterOpenOnlyMsg` | `(frame)` | quit.lua
+`RULLET_LIST` | `RegisterMsg` | `()` | quit.lua
+`OPEN_DLG_WAREHOUSE` | `RegisterMsg` | `(frame)` | quit.lua
+`EVENT_TIMER` | `RegisterMsg` | `(frame, msg, str, sec)` | quit.lua
+`FAIL_EVENT` | `RegisterMsg` | `(frame)` | quit.lua
+`CLOSE_TIMER` | `RegisterMsg` | `()` | quit.lua
+`TARGET_CART` | `RegisterMsg` | `(frame)` | quit.lua
+`TARGET_SPRAY` | `RegisterMsg` | `(frame)`<br>`(frame, msg, str, num, pobj)` | quit.lua<br>targetspray.lua
+`GOLEM_REVIVE` | `RegisterMsg` | `(frame, msg, handle, time)` | quit.lua
+`MEDAL_RECEIVED` | `RegisterMsg` | `()` | quit.lua
+`MEDAL_PRESENTED` | `RegisterMsg` | `()` | quit.lua
+`RAID_STATE` | `RegisterMsg` | `(frame, msg, mGameName, num)`<br>`(frame, msg, mGameName)` | raidassemble_ready.lua<br>tournament.lua
+`RAID_ASSEMBLE` | `RegisterMsg` | `(frame, msg, mGameName, argNum)` | raidassemble_sel.lua
+`RAID_REWARD_START` | `RegisterMsg` | `(frame, msg, str, num)` | raid_reward.lua
+`RAID_REWARD_PICKCNT` | `RegisterMsg` | `(frame, msg, str, num)` | raid_reward.lua
+`REWARD_EXEC_COMPLETE` | `RegisterMsg` | `(frame)` | raid_reward.lua
+`RAID_REWARD_FAIL` | `RegisterMsg` | `(frame)` | raid_reward.lua
+`RAID_TIMER_START` | `RegisterMsg` | `(frame,msg,strArg,numArg)` | raid_timer.lua
+`RAID_TIMER_END` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | raid_timer.lua
+`RAID_TIMER_TEXT_GAUGE_UPDATE` | `RegisterMsg` | `(frame, msg, argStr)` | raid_timer.lua
+`AUTOSELLER_UPDATE` | `RegisterOpenOnlyMsg` | `(frame)` | rankreset.lua<br>rankrollback.lua
+`RANK_SYSTEM_TIMETABLE` | `RegisterMsg` | `(parent, ctrl, argStr, argNum)` | ranksystem_ui.lua
+`RANK_SYSTEM_MY_DATA` | `RegisterMsg` | `(parent, msg, argStr, argNum)` | ranksystem_ui.lua<br>weeklyboss_reward.lua
+`RANK_SYSTEM_DATA` | `RegisterMsg` | `(parent, ctrl, argStr, argNum)` | ranksystem_ui.lua
+`FAIL_ENCHANT_JEWELL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | rareoption.lua
+`SUCESS_ENCHANT_JEWELL` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | rareoption.lua
+`READ_RECORD_SCROLL` | `RegisterMsg` | `(frame, msg, dialog, argNum)` | recordscrollread.lua
+`ITEM_EXP_STOP` | `RegisterMsg` | `()` | reinforce_by_mix.lua
+`ITEM_EXPUP_END` | `RegisterMsg` | `(frame, msg, multiPly, totalPoint)` | reinforce_by_mix.lua
+`ITEM_EXP_STOP_CERTIFICATE` | `RegisterMsg` | `()` | reinforce_by_mix_certificate.lua
+`ITEM_EXPUP_END_CERTIFICATE` | `RegisterMsg` | `(frame, msg, multiPly, totalPoint)` | reinforce_by_mix_certificate.lua
+`ITEM_EXPUP_END_NEW_ITEM` | `RegisterMsg` | `(frame, msg, arg1, totalPoint)` | reinforce_by_mix_certificate.lua
+`OPEN_DLG_RELICMANAGER` | `RegisterMsg` | `(frame)` | relicmanager.lua
+`MSG_SUCCESS_RELIC_CHARGE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | relicmanager.lua
+`MSG_SUCCESS_RELIC_EXP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | relicmanager.lua
+`MSG_SUCCESS_RELIC_SOCKET` | `RegisterMsg` | `(frame)` | relicmanager.lua
+`RELIC_EXP_REFINE_EXECUTE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | relic_exp_refine.lua
+`OPEN_DLG_RELIC_GEM_MANAGER` | `RegisterMsg` | `(frame)` | relic_gem_manager.lua
+`MSG_END_RELIC_GEM_REINFORCE` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | relic_gem_manager.lua
+`MSG_END_RELIC_GEM_COMPOSE` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | relic_gem_manager.lua
+`MSG_SUCCESS_RELIC_GEM_TRANSFER` | `RegisterMsg` | `(frame)` | relic_gem_manager.lua
+`MSG_SUCCESS_RELIC_GEM_DECOMPOSE` | `RegisterMsg` | `(frame)` | relic_gem_manager.lua
+`OPEN_DLG_REPAIR` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | repair.lua<br>repair140731.lua
+`UPDATE_DLG_REPAIR` | `RegisterMsg` | `(frame, msg, argStr, argNum)`<br>`(frame)` | repair.lua<br>repair140731.lua<br>repairitem.lua
+`OPEN_DLG_REPAIRITEM` | `RegisterMsg` | `(frame)` | repairitem.lua
+`REQUEST_REPUTATION_POINT_EXTRACT_UPDATE` | `RegisterMsg` | `()` | reputation_point_extract.lua
+`REQUEST_REPUTATION_SHOP_OPEN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | reputation_shop.lua
+`REQUEST_REPUTATION_SHOP_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | reputation_shop.lua
+`RESTART_WAIT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | restart.lua
+`RESTART_WAIT_END` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | restart.lua
+`RESTART_HERE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | restart.lua
+`RESTARTSELECT_UP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | restart.lua
+`RESTARTSELECT_DOWN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | restart.lua
+`RESTARTSELECT_SELECT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | restart.lua
+`RESTQUICKSLOT_OPEN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | restquickslot.lua
+`DO_OPEN_REVERTRANDOM_AGREEBOX_UI` | `RegisterMsg` | `(clmsg, obj, yesScp, argStr)` | revertrandomagreebox.lua
+`UNTARGET_COMPANION` | `RegisterMsg` | `(frame)` | ringcommand.lua
+`SELECT_MGAME_BUFF_PARTY` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | select_mgame_buff_party.lua
+`SELECT_MGAME_BUFF_PARTY_END` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | select_mgame_buff_party.lua
+`SELECT_MGAME_BUFF_PARTY_SELECT` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | select_mgame_buff_party.lua
+`SELECT_MGAME_BUFF_PARTY_UPDATE` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | select_mgame_buff_party.lua
+`SELECT_MGAME_BUFF_SOLO` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | select_mgame_buff_solo.lua
+`SELECT_MGAME_BUFF_SOLO_END` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | select_mgame_buff_solo.lua
+`SELECT_MGAME_BUFF_SOLO_OPTION` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | select_mgame_buff_solo.lua
+`SELECT_MGAME_BUFF_SOLO_OPTION_SELECT_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | select_mgame_buff_solo.lua
+`SELECT_MGAME_BUFF_SOLO_SELECT_BTN_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | select_mgame_buff_solo.lua
+`SELECT_MGAME_BUFF_SOLO_OPTION_END` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | select_mgame_buff_solo.lua
+`GUILDWAREHOUSE_ITEM_IN` | `RegisterMsg` | `(frame, msg, arg1, type, class)` | sequentialpickitem.lua
+`SEAL_LV_UP_POPUP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | sequentialpickitem.lua
+`GET_PROPERTY_POINT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | sequentialpickitem.lua
+`SHOP_ITEM_LIST_GET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | shop.lua
+`SOLD_ITEM_LIST` | `RegisterMsg` | `(frame, msg, str, num)` | shop.lua
+`FAIL_SHOP_BUY` | `RegisterMsg` | `(frame)` | shop.lua
+`COMMON_SHOP_ITEM_LIST_GET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | shop.lua
+`SILVER_GACHA_INFO` | `RegisterMsg` | `()` | silver_gacha.lua
+`SILVER_GACHA_INFO_CHANGE` | `RegisterMsg` | `()` | silver_gacha.lua
+`SILVER_GACHA_EXEC_RESULT` | `RegisterMsg` | `(frame, msg, argStr, itemID)` | silver_gacha.lua
+`SILVER_GACHA_NO_EVENT_EXIST` | `RegisterMsg` | `()` | silver_gacha.lua
+`UPDATE_INGAME_SHOP_ITEM_LIST` | `RegisterMsg` | `(frame)` | simpleingameshop.lua<br>steamtpinventory.lua<br>tpitem.lua
+`CLOSE_INGAMESHOP_UI` | `RegisterMsg` | `()` | simpleingameshop.lua<br>steamtpinventory.lua
+`UPDATE_INGAME_SHOP_REMAIN_CASH` | `RegisterMsg` | `(frame)` | simpleingameshop.lua<br>steamtpinventory.lua<br>tpitem.lua
+`INGAMESHOP_STATE_MSG` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | simpleingameshop.lua<br>steamtpinventory.lua
+`SUCCESS_LEARN_ABILITY` | `RegisterOpenOnlyMsg` | `(frame, msg, abilName)` | skillability.lua
+`UPDATE_ABILITY_POINT` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | skillability.lua
+`RESET_SKL_UP` | `RegisterOpenOnlyMsg` | `(frame, msg, skillID, argNum)` | skillability.lua<br>sysmenu.lua
+`SKILL_LIST_GET_RESET_SKILL` | `RegisterOpenOnlyMsg` | `(frame, msg, skillID, argNum)` | skillability.lua
+`UPDATE_COMMON_SKILL_LIST` | `RegisterOpenOnlyMsg` | `(frame, msg, argStr, argNum)` | skillability.lua
+`POPULAR_SKILL_INFO` | `RegisterOpenOnlyMsg` | `(frame)` | skillability.lua
+`ADD_SKILL_QUEUE` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | skillqueue.lua
+`UPDATE_SKILL_QUEUE` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | skillqueue.lua
+`MYPAGE_LOAD_COMPLETE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | social.lua<br>socialtarget.lua
+`SOCIAL_SELL_ITEM_LIST` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | social.lua
+`DUMMYPC_LIST` | `RegisterMsg` | `(frame, msg, str, arg)` | soldierinfo.lua<br>soldierlist.lua
+`DUMMYPC_HP_UPDATE` | `RegisterMsg` | `(frame, msg, cid, hp)` | soldierinfo.lua
+`MAIN_PC_CHANGE` | `RegisterMsg` | `(frame, msg, str, num)` | soldierlist.lua
+`DO_SOLODUNGEON_RANKINGPAGE_OPEN` | `RegisterMsg` | `(frame)` | solodungeonrankingpage.lua
+`SOLO_DUNGEON_RANKING_RESET` | `RegisterOpenOnlyMsg` | `(frame)` | solodungeonrankingpage.lua
+`DO_SOLODUNGEON_SCOREBOARD_OPEN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | solodungeonscoreboard.lua
+`SOLO_D_TIMER_START` | `RegisterMsg` | `(frame,msg,strArg,numArg)` | solo_d_timer.lua
+`SOLO_D_TIMER_END` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | solo_d_timer.lua
+`SOLO_D_TIMER_TEXT_GAUGE_UPDATE` | `RegisterMsg` | `(frame, msg, argStr)` | solo_d_timer.lua
+`SOLO_D_TIMER_TEXT_STAGE_SET` | `RegisterMsg` | `()` | solo_d_timer.lua
+`PC_PROPERTY_UPDATE_TO_STATUS` | `RegisterMsg` | `(frame)` | status.lua
+`PC_PROPERTY_UPDATE_DETAIL` | `RegisterMsg` | `(frame, msg, propertyName, argNum)` | status.lua
+`RESET_STAT_UP` | `RegisterMsg` | `(frame)` | status.lua
+`STAT_AVG` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | status.lua
+`ACHIEVE_REWARD` | `RegisterOpenOnlyMsg` | `(frame)` | status.lua
+`PC_COMMENT_CHANGE` | `RegisterMsg` | `(frame)` | status.lua
+`LIKEIT_WHO_LIKE_ME` | `RegisterMsg` | `()`<br>`(frame, msg, argStr, argNum)` | status.lua<br>wholikeme.lua
+`UPDATE_EXP_UP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | status.lua
+`HAIR_COLOR_CHANGE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | status.lua
+`ADD_CHATBALLOON_SKIN` | `RegisterMsg` | `(frame)` | status.lua
+`SET_MY_CHATBALLOON_SKIN` | `RegisterMsg` | `(frame, msg, argStr, ClassID)` | status.lua
+`ENABLE_CHANGE_TEAM_NAME_BY_ITME` | `RegisterMsg` | `(frame, msg, argStr, result)` | status.lua
+`ENABLE_CHANGE_GUILD_NAME_BY_ITME` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | status.lua
+`UPDATE_MATERIAL_COUNT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | switchgender.lua
+`PC_PROPERTY_UPDATE_TO_SYSMENU` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | sysmenu.lua
+`JOB_SKILL_POINT_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | sysmenu.lua
+`ANCIENT_UI_OPEN` | `RegisterMsg` | `(frame)` | sysmenu.lua
+`SERV_UI_EMPHASIZE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | sysmenu.lua
+`PREMIUM_NEXON_PC` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | sysmenu.lua
+`ENABLE_PCBANG_SHOP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | sysmenu.lua
+`NEW_USER_REQUEST_GUILD_JOIN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | sysmenu.lua
+`GUILD_PROMOTE_NOTICE` | `RegisterMsg` | `(frame)` | sysmenu.lua
+`SYSMENU_CHANGED` | `RegisterMsg` | `()` | sysmenu_joystick.lua
+`SYSMENU_JOYSTICK_OPEN` | `RegisterMsg` | `()` | sysmenu_joystick.lua
+`SYSMENU_JOYSTICK_CLOSE` | `RegisterMsg` | `()` | sysmenu_joystick.lua
+`SYSMENU_JOYSTICK_ROLL_LEFT` | `RegisterMsg` | `()` | sysmenu_joystick.lua
+`SYSMENU_JOYSTICK_ROLL_RIGHT` | `RegisterMsg` | `()` | sysmenu_joystick.lua
+`QUEST_START` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | sysmsg.lua
+`QUEST_END` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | sysmsg.lua
+`IES_VALUE_CHANGE` | `RegisterMsg` | `(frame)` | systemoption.lua
+`TARGET_BUFF_ADD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | targetbuff.lua
+`TARGET_BUFF_REMOVE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | targetbuff.lua
+`TARGET_BUFF_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | targetbuff.lua<br>targetinfo.lua<br>targetinfotoboss.lua
+`TARGET_SET_BOSS` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | targetinfotoboss.lua
+`TARGET_CLEAR_BOSS` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | targetinfotoboss.lua
+`MISS_CHECK_SHOW_ICON` | `RegisterMsg` | `(frame, msg, iconName, count)` | targetinfotoboss.lua
+`MISS_CHECK_REMOVE_ICON` | `RegisterMsg` | `(frame, msg)` | targetinfotoboss.lua
+`UNTARGET_SPRAY` | `RegisterMsg` | `(frame, msg, str, num, pobj)` | targetspray.lua
+`UPDATE_SPRAY` | `RegisterMsg` | `(frame)` | targetspray.lua
+`LIKE_LIST` | `RegisterMsg` | `(frame)` | targetspray.lua
+`TEMPITEM_SET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | tempitemuse.lua
+`TEMPITEM_EMPTY` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | tempitemuse.lua
+`ADD_TEMP_ITEM` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | tempitemuse.lua
+`REMOVE_TEMP_ITEM` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | tempitemuse.lua
+`UPDATE_TEMPITEM_COUNT_BY_PROP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | tempitemuse.lua
+`REAL_TIME_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | time.lua
+`TIME_ACTION` | `RegisterMsg` | `(frame, msg, msgType, isFail, info)` | timeaction.lua
+`TOSHERO_INFO_GET` | `RegisterMsg` | `()` | toshero_info.lua<br>toshero_info_attribute.lua<br>toshero_info_buff.lua<br>toshero_info_buffshop.lua<br>toshero_info_reinforce.lua
+`TOSHERO_INFO_POINT` | `RegisterMsg` | `()` | toshero_info.lua<br>toshero_info_buffshop.lua<br>toshero_info_lottery.lua<br>toshero_info_reinforce.lua
+`TOSHERO_STAGE_START` | `RegisterMsg` | `(frame, msg, argStr, stage)` | toshero_info.lua<br>toshero_info_gauge.lua<br>toshero_info_stage.lua
+`TOSHERO_INFO_NEXT_STAGE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | toshero_info.lua
+`TOSHERO_HIDDEN_BUFF_ADD` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | toshero_info.lua
+`TOSHERO_ZONE_ENTER` | `RegisterMsg` | `(frame, msg, argStr, stage)`<br>`()` | toshero_info.lua<br>toshero_info_lottery.lua
+`TOSHERO_STAGE_END` | `RegisterMsg` | `()`<br>`(frame, msg, type, size)` | toshero_info.lua<br>toshero_info_end.lua<br>toshero_info_gauge.lua
+`TOSHERO_INFO_BUFFSHOP` | `RegisterMsg` | `()` | toshero_info_buffshop.lua
+`TOSHERO_INFO_COMBINE_SUCCESS` | `RegisterMsg` | `(frame, msg, argStr, type)` | toshero_info_buffshop.lua
+`TOSHERO_STAGE_REFRESH` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | toshero_info_gauge.lua
+`TOSHERO_GRID_OBJECTHP` | `RegisterMsg` | `(frame, msg, HP)` | toshero_info_gauge.lua
+`TOSHERO_SHOW_SIMPLE_MSG` | `RegisterMsg` | `(frame, msg, msgStr)` | toshero_info_gauge.lua
+`TOSHERO_LOTTERY_FAIL` | `RegisterMsg` | `()` | toshero_info_lottery.lua
+`TOSHERO_INFO_SCORE_GET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | toshero_info_score.lua
+`GIVE_ITEM_COMPLETE` | `RegisterOpenOnlyMsg` | `(frame)` | tournament_gift.lua
+`TOURNAMENT_TEAM_UPDATE` | `RegisterMsg` | `(frame)` | tournament_view.lua
+`TOURNAMENT_BATTLE_WIN` | `RegisterMsg` | `(frame, msg, winTeam, loseTeam)` | tournament_view.lua
+`TOURNAMENT_WIN` | `RegisterMsg` | `(frame)` | tournament_win.lua
+`TP_SHOP_UI_OPEN` | `RegisterMsg` | `(frame, msg, shopName, argNum)` | tpitem.lua
+`TPSHOP_BUY_SUCCESS` | `RegisterMsg` | `(frame)` | tpitem.lua
+`SHOP_BUY_LIMIT_INFO` | `RegisterMsg` | `(frame)` | tpitem.lua
+`SHOP_USER_INFO` | `RegisterMsg` | `(frame)` | tpitem.lua
+`SHOP_USER_USED_MEDAL` | `RegisterMsg` | `(frame)` | tpitem.lua
+`UPDATE_INGAME_SHOP_CASHINVEN` | `RegisterMsg` | `()` | tpitem.lua
+`UPDATE_INGAME_SHOP_PURCHASE_RESULT` | `RegisterMsg` | `(parent, control, msg, ret)` | tpitem.lua
+`UPDATE_INGAME_SHOP_REFUND_RESULT` | `RegisterMsg` | `(parent, control, msg, ret)` | tpitem.lua
+`UPDATE_INGAME_SHOP_PICKUP_RESULT` | `RegisterMsg` | `(parent, control, msg, ret)` | tpitem.lua
+`UPDATE_TPITEM_LIST_FOR_TAG` | `RegisterMsg` | `()` | tpitem.lua
+`UPDATE_TPSHOP_BANNER` | `RegisterMsg` | `(parent, control, argStr, argNum)` | tpitem.lua
+`NEXON_AMERICA_LIST` | `RegisterMsg` | `()` | tpitem.lua
+`NEXON_AMERICA_SELLITEMLIST` | `RegisterMsg` | `()` | tpitem.lua
+`NEXON_AMERICA_BALANCE` | `RegisterMsg` | `()` | tpitem.lua
+`NEXON_AMERICA_BALANCE_ENOUGH` | `RegisterMsg` | `()` | tpitem.lua
+`NEXON_AMERICA_BALANCE_NOT_ENOUGH` | `RegisterMsg` | `()` | tpitem.lua
+`OPEN_DLG_TRANSFERSEAL` | `RegisterMsg` | `()` | transferseal.lua
+`TRANSFER_SEAL_SUCCESS` | `RegisterMsg` | `(frame, msg, guid)` | transferseal.lua
+`TUTORIALNOTE_REWARD_GET` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | tutorialnote.lua
+`OPEN_DLG_UNIQUEDECOMPOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | uniquedecompose.lua
+`RESULT_UNIQUE_DECOMPOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | uniquedecompose.lua
+`OPEN_DLG_UPGRADE_GODDESS` | `RegisterMsg` | `()` | upgrade_goddess.lua
+`UPGRADE_EVIL_GODDESS_SUCCESS` | `RegisterMsg` | `(frame, msg, guid)` | upgrade_goddess.lua
+`UPGRADE_EVIL_GODDESS_FAIL` | `RegisterMsg` | `(frame, msg, guid, count)` | upgrade_goddess.lua
+`OPEN_DLG_UPGRADE_VIBORA` | `RegisterMsg` | `()` | upgrade_vibora.lua
+`UPGRADE_VIBORA_SUCCESS` | `RegisterMsg` | `(frame, msg, guid)` | upgrade_vibora.lua
+`UPGRADE_VIBORA_FAIL` | `RegisterMsg` | `(frame, msg, guid, count)` | upgrade_vibora.lua
+`OPEN_DLG_VIBORA_WEAPON_TRADE` | `RegisterMsg` | `()` | vibora_weapon_trade.lua
+`VIBORA_WEAPON_TRADE_SUCCESS` | `RegisterMsg` | `(frame, msg, guid)` | vibora_weapon_trade.lua
+`DO_OPEN_WARNINGMSGBOX_UI` | `RegisterMsg` | `(clmsg, yesScp, noScp, itemGuid, title)` | warningmsgbox.lua
+`DO_OPEN_WARNINGMSGBOX_EX_UI` | `RegisterMsg` | `(frame, msg, argStr, argNum, option)` | warningmsgbox_ex.lua
+`DO_UNKNOWN_SANTUARTY_GATE_BUFF_MSG_BOX` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | warningmsgbox_ex.lua
+`WEAPONSWAP_ENTERED` | `RegisterMsg` | `(frame)` | weaponswap.lua
+`WEAPONSWAP` | `RegisterMsg` | `(frame)` | weaponswap.lua
+`WEAPONSWAP_CLEAR` | `RegisterMsg` | `(frame, msg, arg_str, arg_num)` | weaponswap.lua
+`WEAPONSWAP_FAIL` | `RegisterMsg` | `()` | weaponswap.lua
+`WEAPONSWAP_SUCCESS` | `RegisterMsg` | `()` | weaponswap.lua
+`WEAPONSWAP_TOGGLE_LINE` | `RegisterMsg` | `()` | weaponswap.lua
+`WEEKLY_BOSS_RECEIVE_REWARD` | `RegisterMsg` | `(frame,msg,argStr,argNum)` | weeklyboss_reward.lua
+`WIKI_LIST_ADD` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | wikiadd.lua
+`ADVENTURE_BOOK_NEW` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | wikiadd.lua
+`UPDATE_FIELDBOSS_INFO` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | worldmap2_mainmap.lua<br>worldmap2_submap.lua
+`TOGGLE_FAVORITE_MAP` | `RegisterMsg` | `(frame)`<br>`(frame, msg, argStr, argNum)` | worldmap2_mainmap.lua<br>worldmap2_minimap.lua
+`REQUEST_TOKEN_WARP` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | worldmap2_minimap.lua
+`WORLDPVP_RANK_ICON` | `RegisterMsg` | `(frame, msg, cid, argNum, info)` | worldpvp.lua
+`PLAY_COUNT_MAX` | `RegisterMsg` | `(frame, msg)` | worldpvp.lua
+`COLONYWAR_GUILD_KILL_MSG` | `RegisterMsg` | `(frame, msg, argstr, argnum)` | worldpvp_msg.lua
+`WAREHOUSE_ITEM_LIST` | `RegisterMsg` | `()` | lib_warehouse.lua
+`WAREHOUSE_ITEM_ADD` | `RegisterMsg` | `()` | lib_warehouse.lua
+`WAREHOUSE_ITEM_REMOVE` | `RegisterMsg` | `()` | lib_warehouse.lua
+`WAREHOUSE_ITEM_CHANGE_COUNT` | `RegisterMsg` | `()` | lib_warehouse.lua
+`WAREHOUSE_ITEM_IN` | `RegisterMsg` | `()` | lib_warehouse.lua
+`CLOSE_WAREHOUSE_FRAME` | `RegisterMsg` | `()` | lib_warehouse.lua
+`BARRACK_NAME_CHANGE_RESULT` | `RegisterMsg` | `(frame, addon, str, result)`<br>`(frame, msg, argStr, argNum, ud)` | barracksetting.lua<br>barrack_charlist.lua
+`BARRACK_SETTING_SAVE_CHECK` | `RegisterMsg` | `(frame, msg, argStr, result)` | barracksetting.lua
+`ACCOUNT_PROP_UPDATE` | `RegisterMsg` | `(frame)` | barrackthema.lua<br>barrackupgrade.lua
+`BARRACK_ADDCHARACTER` | `RegisterMsg` | `(frame, msg, argStr, argNum, ud)` | barrack_charlist.lua
+`BARRACK_NEWCHARACTER` | `RegisterMsg` | `(frame, msg, argStr, argNum, ud)`<br>`(frame)` | barrack_charlist.lua<br>pub_createchar.lua
+`BARRACK_SLOT_BUY` | `RegisterMsg` | `(frame, msg, argStr, argNum, ud)` | barrack_charlist.lua
+`BARRACK_CREATECHARACTER_BTN` | `RegisterMsg` | `(frame, msg, argStr, argNum, ud)` | barrack_charlist.lua
+`BARRACK_DELETECHARACTER` | `RegisterMsg` | `(frame, obj, argStr, argNum)` | barrack_charlist.lua
+`BARRACK_SELECTCHARACTER` | `RegisterMsg` | `(frame, msg, argStr, argNum, ud)` | barrack_charlist.lua
+`BARRACK_SELECT_BTN` | `RegisterMsg` | `(frame, msg, argStr, argNum, ud)` | barrack_charlist.lua
+`BARRACK_REMOVE_CHARACTER_SCROLLBOX` | `RegisterMsg` | `(frame)` | barrack_charlist.lua
+`BARRACK_NAME` | `RegisterMsg` | `(frame, msg, argStr, argNum, ud)` | barrack_charlist.lua
+`SET_BARRACK_MODE` | `RegisterMsg` | `(frame, msg, argStr, argNum, ud)` | barrack_charlist.lua
+`UPDATE_SELECT_BTN_TITLE` | `RegisterMsg` | `(frame, msg, argStr, argNum, ud)` | barrack_charlist.lua
+`NOT_HANDLED_ENTER` | `RegisterMsg` | `(frame)` | barrack_charlist.lua
+`BARRACK_ACCOUNT_PROP_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum, ud)` | barrack_charlist.lua
+`RESULT_CHECK_MARKET` | `RegisterMsg` | `(frame, msg, cid, registered)` | barrack_charlist.lua
+`BARRACK_CHARACTER_SWAP_FAIL` | `RegisterMsg` | `(frame)` | barrack_charlist.lua
+`BARRACK_CHARACTER_SWAP_SUCCESS` | `RegisterMsg` | `(frame)` | barrack_charlist.lua
+`BARRACK_GOSELECT` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | barrack_charname.lua<br>createchar.lua
+`BARRACK_CREATE_PET_BTN` | `RegisterMsg` | `(frame)` | barrack_petlist.lua
+`DELETE_PET` | `RegisterMsg` | `(frame, msg, guid)` | barrack_petlist.lua
+`INPUT_TEAMNAME_EXEC_RESULT` | `RegisterMsg` | `(frame, msg, argStr, result)` | inputteamname.lua
+`START_LOADING` | `RegisterMsg` | `(frame)` | loadingbg.lua
+`OPTION_UPDATE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | option.lua
+`RESET_HEAD_ICON_IMAGE` | `RegisterMsg` | `(frame, msg)` | pub_createchar.lua
+`BARRACK_PRECHECK_VIEW_CONTROL` | `RegisterMsg` | `(frame, msg, argStr, isEnable)` | pub_createchar.lua
+`SELECTCHARACTER_OPEN` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | selectcharmenu.lua
+`SELECTCHARACTER_CLOSE` | `RegisterMsg` | `(frame, msg, argStr, argNum)` | selectcharmenu.lua
