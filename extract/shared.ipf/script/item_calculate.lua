@@ -230,6 +230,12 @@ end
 -- done, 해당 함수 내용은 cpp로 이전되었습니다. 변경 사항이 있다면 반드시 프로그램팀에 알려주시기 바랍니다.
 function SCR_GET_GODDESS_REINFORCE(item)
     local itemReinforce = TryGetProp(item, "Reinforce_2", 0)
+    local owner = GetItemOwner(item)
+    if owner ~= nil and IsPVPServer(owner) == 1 then
+        -- 팀배틀리그 에서는 가상의 강화 수치 적용
+        itemReinforce = PVP_TEAMBATTLE_ITEM_REINFORCE
+    end
+
     local lv = TryGetProp(item, 'UseLv', 0)
     if itemReinforce == 0 or lv == 0 then
         return 0;
@@ -419,7 +425,6 @@ function GET_BASIC_ATK(item)
     end
     
     
-    
     local itemGradeClass = GetClassList('item_grade')
     if itemGradeClass == nil then
         return 0, 0;
@@ -454,9 +459,9 @@ function GET_BASIC_ATK(item)
         return 0, 0;
     end
 
-    if grade == 6 then
+    if grade == 6 and classType ~= 'Neck' and classType ~= 'Ring' then
         itemATK = 13128
-        if TryGetProp(item, 'ClassType', 'None') == 'Trinket' then
+        if classType == 'Trinket' then
             itemATK = itemATK * 0.15
         elseif TryGetProp(item, 'EquipGroup', 'None') == 'THWeapon' then
             itemATK = itemATK * 1.15
@@ -563,9 +568,9 @@ function GET_BASIC_MATK(item)
         itemATK = ChangeBasicProp
     end
     
-    if grade == 6 then
+    if grade == 6 and classType ~= 'Neck' and classType ~= 'Ring' then
         itemATK = 13128
-        if TryGetProp(item, 'ClassType', 'None') == 'Trinket' then
+        if classType == 'Trinket' then
             itemATK = itemATK * 0.15
         elseif TryGetProp(item, 'EquipGroup', 'None') == 'THWeapon' then
             itemATK = itemATK * 1.15
@@ -841,6 +846,24 @@ function SCR_REFRESH_ARMOR(item, enchantUpdate, ignoreReinfAndTranscend, reinfBo
                 basicDef = math.floor(basicDef) * upgradeRatio + GET_REINFORCE_ADD_VALUE(basicProp, item, ignoreReinfAndTranscend, reinfBonusValue) + buffarg
                 item[basicProp] = SyncFloor(basicDef);
         end
+        
+    if TryGetProp(item, "EquipGroup", "None") == "SubWeapon" then
+        local evolvedMaxAtkUp = 0
+        local evolvedMinAtkUp = 0          
+        local evolvedAtkUp = 0
+        local classType = TryGetProp(item, "ClassType");
+        local itemGradeClass = GetClassList('item_grade')
+        local weaponDamageClass = GetClassByNameFromList(itemGradeClass,'WeaponDamageRange')
+        local damageRange = weaponDamageClass[classType]
+
+        evolvedMaxAtkUp = GET_EVOLVED_ATK(item) * damageRange
+        evolvedMinAtkUp = GET_EVOLVED_ATK(item) * (2 - damageRange)
+        evolvedAtkUp = GET_EVOLVED_ATK(item)
+
+        item.MAXATK = item.MAXATK + SyncFloor(evolvedMaxAtkUp)
+        item.MINATK = item.MINATK + SyncFloor(evolvedMinAtkUp)
+        item.MATK = item.MATK + SyncFloor(evolvedAtkUp)
+    end
     
     APPLY_AWAKEN(item);
     APPLY_RANDOM_OPTION(item);

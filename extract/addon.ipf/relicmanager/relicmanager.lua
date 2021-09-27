@@ -5,7 +5,7 @@ function RELICMANAGER_ON_INIT(addon, frame)
 	addon:RegisterMsg('MSG_SUCCESS_RELIC_EXP', 'RELICMANAGER_EXP_UP_END')
 	addon:RegisterMsg('MSG_SUCCESS_RELIC_SOCKET', 'SUCCESS_RELIC_SOCKET')
 	addon:RegisterMsg('UPDATE_RELIC_EQUIP', 'UPDATE_RELICMANAGER_VISIBLE')
-	addon:RegisterMsg('GAME_START', 'RELIC_AUTO_CHARGE');
+	addon:RegisterMsg('RELIC_AUTO_CHARGE', 'RELIC_AUTO_CHARGE');
 end
 
 function ON_OPEN_DLG_RELICMANAGER(frame)
@@ -489,7 +489,7 @@ function RELIC_AUTO_CHARGE()
 	end
 
 	local pc = GetMyPCObject()
-	if IsBuffApplied(pc, 'Colony_Limit_Relic_Release_Buff') == 'YES' or IsBuffApplied(pc, 'GuildRaid_Limit_Relic_Release_Buff') == 'YES' then		
+	if IsBuffApplied(pc, 'Colony_Limit_Relic_Release_Buff') == 'YES' or IsBuffApplied(pc, 'GuildRaid_Limit_Relic_Release_Buff') == 'YES' or IsBuffApplied(pc, 'Colony_Limit_Relic_Release_Buff2') == 'YES' then		
 		return
 	end
 

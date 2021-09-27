@@ -67,6 +67,11 @@ function GCM_MARK_CHANNEL_AS_READ(channel, is_read)
     end
 end
 
+function GCM_COPY_MESSAGE(parent, panel)
+    ui.WriteClipboardText(panel:GetNormalText())
+    ui.MsgBox(ClMsg("CopiedToClipboard"))
+end
+
 function GCM_ON_WHEEL_MSGPANEL(parent, panel, argstr, wheel)
     if current_channel == "" then return end
 
@@ -339,7 +344,9 @@ function GCM_SELECT_CHANNEL(channel, no_reload)
     joining_to = ""
 
     local chat_edit = GET_CHILD_RECURSIVELY(frame, "chat_edit")
-    chat_edit:Focus()
+    if chat_edit:IsHaveFocus() == 0 then
+        chat_edit:Focus()
+    end
 
     return true
 end

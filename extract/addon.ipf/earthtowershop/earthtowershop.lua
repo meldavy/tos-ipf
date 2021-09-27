@@ -19,7 +19,11 @@ local g_account_prop_shop_table =
         ['coinName'] = 'dummy_GabijaCertificate',
         ['propName'] = 'GabijaCertificate',
     },
-
+    ['TeamBattleLeagueShop'] = 
+    {
+        ['coinName'] = 'dummy_TeamBattleCoin',
+        ['propName'] = 'TeamBattleCoin',
+    },
 }
 
 --------------------------------------------------------------------------------------------------------------------------
@@ -504,6 +508,13 @@ function REQ_EVENT_2002_FISHING_SHOP_OPEN()
     -- ui.OpenFrame('earthtowershop');
 end
 
+function REQ_TEAM_BATTLE_SHOP_OPEN()
+    local frame = ui.GetFrame("earthtowershop");
+    frame:SetUserValue("SHOP_TYPE", 'TeamBattleLeagueShop');
+    ui.OpenFrame('earthtowershop');
+end
+
+
 function REQ_EVENT_SHOP_OPEN_COMMON(shopType)
     ui.CloseFrame('earthtowershop');
 
@@ -653,6 +664,9 @@ function EARTH_TOWER_INIT(frame, shopType)
     elseif shopType == 'NewYearShop' then
         title:SetText('{@st43}'..ScpArgMsg("EVENT_2001_NEWYEAR_SHOP"));
         close:SetTextTooltip(ScpArgMsg('CloseUI{NAME}', 'NAME', ScpArgMsg("EventShop")));
+    elseif shopType == 'TeamBattleLeagueShop' then
+        title:SetText('{@st43}'..ScpArgMsg("TEAMBATTLEShop"));
+        close:SetTextTooltip(ScpArgMsg('CloseUI{NAME}', 'NAME', ScpArgMsg("TEAMBATTLEShop")));
     elseif shopType == 'FishingShop2002' then
         -- title:SetText('{@st43}'..ScpArgMsg("EVENT_2002_FISHING_SHOP"));
         -- close:SetTextTooltip(ScpArgMsg('CloseUI{NAME}', 'NAME', ScpArgMsg("EventShop")));
@@ -755,10 +769,10 @@ function EARTH_TOWER_INIT(frame, shopType)
         if cls.ShopType == shopType then
             if EARTH_TOWER_IS_ITEM_SELL_TIME(cls) == true then
                 local isExchangeEnable = true;
-                if checkExchangeEnable == 1 and EXCHANGE_COUNT_CHECK(cls) == 0 then
-                    isExchangeEnable = false;
+                if checkExchangeEnable == 1 and EXCHANGE_COUNT_CHECK(cls) <= 0 then
+                    isExchangeEnable = false;                    
                 end
-
+                
                 local haveM = CRAFT_HAVE_MATERIAL(cls);
                 if checkHaveMaterial == 1 then
                     if haveM == 1 then
@@ -806,11 +820,21 @@ function EARTH_TOWER_IS_ITEM_SELL_TIME(recipeCls)
 end
 
 function EXCHANGE_COUNT_CHECK(cls)
-    local recipecls = GetClass('ItemTradeShop', cls.ClassName);
+    local recipecls = GetClass('ItemTradeShop', cls.ClassName);    
 
     if recipecls.AccountNeedProperty ~= 'None' then
         local aObj = GetMyAccountObj()
-        local sCount = TryGetProp(aObj, recipecls.AccountNeedProperty);
+        local sCount = TryGetProp(aObj, recipecls.AccountNeedProperty, 0);
+                
+        if sCount <= 0 then
+            local overbuy_prop = TryGetProp(recipecls, 'OverBuyProperty', 'None')
+            if overbuy_prop ~= 'None' then
+                local now = TryGetProp(aObj, overbuy_prop, 0)
+                local max = TryGetProp(recipecls, 'MaxOverBuyCount', 10000)                
+                return max - now
+            end
+        end
+
         return sCount;
     end
 
@@ -820,7 +844,7 @@ function EXCHANGE_COUNT_CHECK(cls)
         return sCount;
     end
 
-    return "None";
+    return 1
 end
 
 function INSERT_ITEM(cls, tree, slotHeight, haveMaterial, shopType)    
@@ -1574,6 +1598,8 @@ function EARTH_TOWER_SHOP_TRADE_ENTER()
 --        item.DialogTransaction("EVENT1912_GREWUP_SHOP_1_TREAD1", resultlist, cntText);
     elseif shopType == 'NewYearShop' then
         item.DialogTransaction("EVENT_2001_NEWYEAR_SHOP_1_THREAD1", resultlist, cntText);
+    -- elseif shopType == 'TeamBattleLeagueShop' then
+    --     item.DialogTransaction("TEAM_BATTLE_LEAGUE_SHOP_1_THREAD", resultlist, cntText);
     elseif shopType == 'FishingShop2002' then
         -- item.DialogTransaction("EVENT_2002_FISHING_SHOP_1_THREAD1", resultlist, cntText);
 	else
@@ -1636,6 +1662,8 @@ function ACCOUNT_PROPERTY_SHOP_TRADE_ENTER()
         item.DialogTransaction("SILVER_GACHA_SHOP", resultlist, cntText);
     elseif shopType == 'GabijaCertificate' then -- 여신의 증표(가비야)
         item.DialogTransaction("GabijaCertificate_SHOP", resultlist, cntText);
+    elseif shopType == 'TeamBattleLeagueShop' then --  팀배상점
+        item.DialogTransaction("TEAM_BATTLE_LEAGUE_SHOP_1_THREAD", resultlist, cntText);
     end
 end
 
